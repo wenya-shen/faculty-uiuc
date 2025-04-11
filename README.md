@@ -1053,6 +1053,10 @@ published: 2024
 #organizational_learning #absorptive_capacity #failures #innovation #product_recalls #pharmaceuticals #medical_devices #knowledge_gap #slip_ups #patents #R&D
 
 <details>
+	
+  <summary>Click to expand sections</summary>
+
+  
 # 1. Introduction
 - Organizational learning theory suggests that failures can lead to improvements [Cyert and March 1963; Argyris and Sch¨on 1978, 1996; Argote 2013; Sitkin 1992, Dahlin et al. 2018].
 - **Product failures** are defined as undesirable outcomes for users [Cannon and Edmondson 2001].
@@ -1356,4 +1360,316 @@ published: 2024
 - It extends organizational learning theory by explaining the role of context (failure source and innovation capabilities).
 - The section offers practical implications for firms, highlighting the importance of addressing both knowledge gap and slip-up failures, and building innovation-focused cultures.
 - It also acknowledges the limitations of the study and suggests directions for future research.
+
 </details>
+
+
+```
+title: Sustainable process improvements: Evidence from intervention-based research
+authors: Gopesh Anand, Aravind Chandrasekaran, Luv Sharma
+journal: J Oper Manag
+published: 2021
+```
+ 
+# Executive Summary
+
+This research investigated how to make lasting improvements (Process Improvement; PI) in healthcare processes, specifically focusing on patient education after kidney transplants. Researchers worked closely with a U.S. hospital over three years to redesign this education process and observed what made the improvements stick.
+ 
+*   **What They Actually Did (The Intervention - Step-by-Step):**
+    *   **Observed the Existing Process:** Researchers shadowed nurses and other staff as they educated kidney transplant patients, taking detailed notes on what was done and how.
+    *   **Identified Problems:** They analyzed their notes and interviewed staff to pinpoint issues in the education process. These included:
+        *   Inconsistent information given to patients.
+        *   Rushing through important details.
+        *   Not checking if patients understood the instructions.
+    *   **Redesigned the Education:** Based on the identified problems, they worked with the hospital staff to create a new, standardized education program. This involved:
+        *   Creating a checklist of essential information to cover.
+        *   Developing clear and easy-to-understand materials for patients.
+        *   Implementing a "teach-back" method, where patients repeat the instructions to ensure they understand.
+        *   Dividing education into two parts: one during the hospital stay, and one shortly after discharge.
+    *   **Got Patient Input:** They held focus groups with patients to get their feedback on the redesigned education process. This feedback was used to make further adjustments, such as providing both visual aids and detailed explanations to accommodate different learning styles.
+    *   **Implemented Daily "Huddles":** Short daily meetings were established where staff could discuss any problems they were encountering with the new education process, share best practices, and suggest further improvements.
+    *   **Involved Middle Managers:** Nurse managers were made responsible for supporting the new education process and ensuring it was being followed consistently. They also acted as a link between the frontline staff and senior hospital leadership.
+ 
+*   **Key Ideas They Used:**
+    *   **Organizational Learning Theory:** Organizations improve by learning and adapting. Encouraged staff to reflect, identify areas for improvement, and implement changes.
+    *   **Operational and Change Routines:**
+        *   **Operational Routines:** Day-to-day procedures (patient education process before redesign).
+        *   **Change Routines:** Processes to improve operational routines (e.g., daily huddles).
+
+- **Key Findings**:
+    - Sustained process improvements at the hospital were observed after the intervention.
+    - Improvements in patient health outcomes (reduced 30-day readmission) and satisfaction levels were found to be associated with the redesign. The likelihood of 30-day readmission is 0.25 times lower and the HCAHPS score is about 8% higher for the treatment group as compared to the control group.
+    - The role of middle managers to be vital in sustaining PI over time.
+    - Highlighting a pre-redesign discovery phase to gain employee buy-in, parallel patient-caregiver input for adaptive design, middle management for sustaining change, and IBR for ill-structured problems are found as the key factors for sustainable PI.
+ 
+#healthcare_operations #intervention_based_research #organizational_learning #process_improvements #difference_in_difference #high_interaction_service_environments #patient_education #kidney_transplant #sustainability #standardization #adaptation #middle_management
+
+<details>
+	
+  <summary>Click to expand sections</summary>
+
+# 1. Introduction
+- Process improvements (PI) aim to redesign work processes with the involvement of frontline employees [Nair, 2006; Tucker, 2007], which has been linked to better firm performance [Jacobs, Swink, & Linderman, 2015; Zhang & Xia, 2013].
+- However, there is a shortage of studies on **sustaining PI** over time [Collins & Browning, 2019; Morrison, 2013], which is crucial to prevent performance backsliding and ensure continuous employee engagement [De Treville & Antonakis, 2006; Tucker, Nembhard, & Edmondson, 2007].
+- In healthcare, while the importance of PI is recognized [Ding, 2015; Dobrzykowski, McFadden, & Vonderembse, 2016], sustaining PI is challenging in high interaction service contexts [Chase & Apte, 2007] due to the heterogeneity of patients and caregivers, and the active participation of patients and their families [Damali, Miller, Fredendall, Moore, & Dye, 2016; Tucker & Edmondson, 2003].
+- *Research Question*: How to sustain PI in the context of healthcare delivery?
+    - To address this question, the study focused on redesigning a process for educating kidney transplant patients with post-surgical care instructions.
+    - *Refined Research Question*: How to redesign a process for educating kidney transplant patients and for sustaining the improvements from the redesign over time?
+        - This process involves high patient-caregiver interaction and active patient participation, leading to potential variability, uncertainty, and complexity [Gordon, Prohaska, Gallant, & Siminoff, 2009].
+        - Patients' varying needs, attention levels, and understanding [Dahl, Engebretsen, Andersen, Urstad, & Wahl, 2019], and lapses in following instructions can lead to complications [Dew et al., 2007].
+- The intervention for process redesign involved working with 32 caregivers at a large teaching hospital in the United States over 3 years (2013–2016).
+    - The redesign aimed to include standardization and adaptation [Adler, Goldoftas, & Levine, 1999; Ansari, Reinecke, & Spaan, 2014] in patient education for post-surgical care, ensuring sustainment over time [Anand, Gray, & Siemsen, 2012; Turner & Rindova, 2012].
+- The lessons learned during the process redesign were synthesized using an **intervention-based research (IBR)** framework [Oliva, 2019]. Challenges encountered while applying organizational learning theory prompted adjustments to the theory in practice.
+    - The adjustments reflect updating or refining existing theories as applied to such problems under the IBR framework [Oliva, 2019].
+- The intervention demonstrated that the dual needs for standardization and adaptation in high interaction service environments [Berry Jaeker & Tucker, 2020; Catena, Dopson, & Holweg, 2020] can be met by building appropriate control and flexibility in service delivery processes [Nissinboim & Naveh, 2018; Sousa & da Silveira, 2019].
+    - Empowering frontline employees with direction and autonomy increases their engagement [Nissinboim & Naveh, 2018; Sousa & da Silveira, 2019], and the role of middle managers is vital for sustaining PI.
+- The impact of the redesign was assessed using data from 702 transplant patients, including a control group, using a **difference-in-difference (DID)** approach to evaluate the impact on 30-day readmission and patient satisfaction.
+    - **30-day readmission**: Indicates whether a patient was admitted to any hospital within 30 days after discharge and is commonly used to assess the quality of care delivered in hospitals [Senot et al. 2016a].
+    - **Patient Satisfaction**: Measured using the “Hospital Consumer Assessment of Healthcare Providers and Systems” (HCAHPS) survey, a recognized measure of patients' perceptions [Sharma, Chandrasekaran, Boyer, & McDermott, 2016].
+- Results showed improved outcomes, with a lower likelihood of 30-day readmission (0.25 times lower) and higher HCAHPS scores (about 8% higher) for the treatment group.
+    - Sustained use of the redesigned work process was observed more than 1 year post-redesign.
+    - Continuing evidence of sustaining PI was seen in the form of daily problem-solving through huddles, involving frontline employees and middle management.
+ 
+# 2. Sustainment of PI and Organizational Learning Theory
+- This research aims to implement sustainable PI in the high interaction service context of healthcare delivery.
+- While there is substantial research associating organizational PI initiatives with performance (reviewed in Song and Tucker [2016]), only a few recent studies in healthcare operations management have focused on the impact of a process change on the outcomes of the process.
+- Studies on process changes in healthcare were classified based on:
+    - Whether researchers followed implementation concurrently or retrospectively.
+        - Embedding researchers allows for closer study of challenges and measures taken.
+    - Whether outcomes referred to patient outcomes.
+        - Patient outcomes are more closely related to process changes than overall hospital performance measures.
+    - Whether the study covered sustainment of results over some period.
+- Bavafa et al. [2018] observed that e-visits were associated with more office visits, mixed results on phone visits and patient health outcomes, and a reduction in caregivers' accepting new patients. This was a one-time change without caregiver involvement.
+- Song et al. [2017] found that switching from private to public disclosing of relative performance feedback (RPF) for physicians was associated with increased physician productivity, sustained for about a year. This study excluded information on physician involvement.
+- Staats et al. [2017] assessed the effects of deploying and then discontinuing an electronic monitoring system for handwashing compliance, showing an increase in compliance followed by a decline after discontinuation.
+- Unlike the previous studies, Tucker and Singer [2015] used a planned intervention approach with a management by walking around (MBWA) program, but did not report on any follow-up assessment. Overall, they found MBWA implementations to have a negative impact on quality improvement efforts.
+- Distinguishing from these studies, this research implements a process redesign, applies theory, assesses sustainment of results, and offers lessons from putting the theory in practice [Edmondson, 1996; Holmström, Ketokivi, & Hameri, 2009].
+    - This research is unique in that it intervenes in a process redesign, focuses on sustainment of PI, offers refinements to theoretical concepts, and assesses the impact on process effectiveness and customer satisfaction.
+- Organizational learning theory [Argote & Miron-Spektor, 2011; Argyris & Schön, 1978] is applied to implement PI in healthcare, leveraging employee knowledge to improve operations [Hayes, Wheelwright, and Clark, 1988; Leonard-Barton, 1992].
+    - In healthcare operations, involving frontline employees is especially helpful to increase their confidence [Nembhard & Tucker, 2011; Tucker et al., 2007] and to facilitate their use of standardization and adaptation [Berry Jaeker & Tucker, 2020; Catena et al., 2020].
+- While organizational learning theory has been used to study experience [Kc, Staats, & Gino, 2013; Pisano, Bohmer, & Edmondson, 2001] and PI [Chandrasekaran, Senot, & Boyer, 2012; Ding, 2014; Roth, Tucker, Venkataraman, & Chilingerian, 2019; Song & Tucker, 2016], it has been unable to address sustainment [Morrison, 2013; Staats et al., 2017].
+    - This limitation is addressed by maintaining recurring cycles of organizational learning [Anand, Ward, & Tatikonda, 2010; Nonaka & Von Krogh, 2009], establishing a system for learning how to learn [Argyris & Schön, 1978] that goes beyond reactionary process changes [Tucker, Zheng, Gardner, & Bohn, 2020].
+- Caregivers establish standardized ways of working (**operational routines**) [Nelson & Winter, 1982], including adaptation-in-use (**flexibility**) [Feldman & Pentland, 2003].
+    - These routines serve as baselines when implementing **change routines** [Anand et al., 2009]. The intervention includes routines for root-cause analyses and for sustaining the search for improvements [Desai, 2020].
+- The study uses an IBR approach [Edmondson, 1996; Oliva, 2019], applying an existing theory to a complex problem [Groop, Ketokivi, Gupta, & Holmström, 2017; Simon, 1973] and refining the theory based on lessons learned [Argyris, 1996]. The process redesign and theory refinements are mapped to the components of the IBR framework [Oliva, 2019].
+ 
+# 3. Context and Methods
+- The research site, Alpha, is a large multispecialty teaching hospital in the United States.
+- Ensuring patients understand their care after surgery, especially after transplants, is critical [Dahl et al., 2019].
+    - Failure to provide proper patient education is a major cause of preventable readmissions [Regalbuto, Maurer, Chapel, Mendez, & Shaffer, 2014].
+- Alpha was experiencing issues with its patient education processes for post-surgical care. Past PI efforts had failed to sustain.
+- Top management approached a coauthor to work on redesigning the education process for transplant patients, aiming to improve it in a sustainable way. This redesign would serve as a template for an organization-wide PI initiative.
+- The kidney transplant unit was selected, conducting approximately 200 kidney transplants per year with a 30-day readmission rate of 35%.
+- Figure 1 shows an overview of the patient education process before the redesign, highlighting problems such as variation in instructions, lack of handoffs, rushing through instructions, and inconsistencies in educational aids.
+- Figure 2 presents the timeline of the intervention, including pre-redesign and post-redesign phases.
+- The project team consisted of hospital representatives (chief quality and patient safety officer, physician director, and nursing director) and the academic research team.
+- The research team interacted with personnel at the kidney transplant unit (inpatient nurses, outpatient nurses, nurse managers, transplant surgeons, and nephrologists), as well as social workers, patient council staff, and IT administrators.
+- Input was also solicited from 15 kidney transplant patients.
+- Table 2 outlines the data collected (field observations, surveys, process maps, patient data, etc.) between January 2013 and April 2016.
+- From January 2013 to June 2014 (**pre-redesign period**), the research team observed the existing patient education process and gathered information from caregivers and patients.
+    - Teams of two researchers shadowed caregivers delivering post-surgical care education for 15 patients, taking detailed notes.
+    - 34 caregivers were interviewed to get their descriptions of the patient education process, lasting about an hour each.
+- The notes and transcriptions served as input for six workshops with caregivers during the **redesign period** (July 2014 to April 2015).
+    - These workshops reported findings from patient-education shadowing and discussed areas of variation.
+    - Value stream mapping was conducted in two workshops, drawing current and envisioned future states.
+- In parallel, two focus groups were conducted with six patients each, who had received transplants within the past 6 months, to get their inputs on the education.
+    - These groups were diverse and included family members.
+    - The focus groups were structured using questions listed in Appendix A.
+    - The 12 patients also responded to a survey related to their learning styles (Appendix B).
+    - Further, data was collected from 87 kidney transplant patients using a structured questionnaire and open-ended questions.
+- In the **post-redesign period** (May 2015–April 2016), frontline nurses designed and implemented a system of problem-solving through daily (inpatient) and weekly (outpatient) huddles.
+    - These huddles were short meetings used to address problems, share best practices, identify areas for PI, and track efforts for PI [Provost, Lanham, Leykum, McDaniel Jr, & Pugh, 2015].
+- Table 3 summarizes the qualitative data collection components (interviews, workshops, and patient focus groups).
+ 
+# 4. Problem Situation (S), Methodology (M), and Theory Refinements (T)
+- The redesigned process, resulting from caregiver engagement to improve patient education for post-surgical care, is shown in Figure 3.
+- The redesign is described using the mode of “interventions as a source of theory” [Oliva, 2019], focusing on a real-world problem situation (S), solved through a methodology (M) that was developed while refining an existing theory (T).
+    - **S**: Implementing sustainable PI through redesign of a patient education process for post-surgical care.
+    - **T**: Organizational learning theory, refined while addressing the problem.
+    - **M**: Working with caregivers and patients to understand challenges, developing and testing countermeasures, resulting in refinements to the theory.
+- The application of the IBR framework is consistent with abductive reasoning and context-theory-context iterations [Chandrasekaran, de Treville, & Browning, 2020].
+    - Challenges encountered when applying organizational learning theory questioned current understanding, leading to the development of specific directions, or countermeasures, to overcome these challenges.
+- The intervention for the process redesign focuses on four specific challenges and countermeasures, summarized in Table 4.
+ 
+## 4.1. Initiation of redesign and engagement in PI
+- Initially, surgeons and nurses showed little interest in redesigning the patient education process or PI in general.
+    - Caregivers expressed skepticism about the need for assessment or redesign.
+    - Middle management employees believed their processes could not benefit from external applications.
+- The research team found that highlighting organizations such as Toyota, Cleveland Clinic, and Thedacare, and relating their success stories, only compounded employee resistance.
+- Research on organizational learning theory recognizes that PI efforts take time and sustained employee engagement can be challenging [Gowen III et al., 2006].
+    - Employees can be resistant to change [Kirkman & Shapiro, 2001] or their interests may drop off, especially if there are significant efforts required with little or no benefit [Nembhard & Edmondson, 2006; Siemsen, Balasubramanian, & Roth, 2007].
+- Sustained engagement is critical for PI [Repenning and Sterman (2001)]. Top management support has been shown as one route for engaging employees, yet it has not proved to be enough [Chandrasekaran & Toussaint, 2019].
+- To address this challenge, the caregiving team was convinced to participate in a discovery phase to study the existing process.
+- Statistical analysis of quantitative data and qualitative analysis from interviews indicated that high variation in the existing process was associated with greater patient anxiety levels.
+    - These findings, published in a healthcare journal [Chandrasekaran et al., 2016], generated awareness among the caregivers of the need to redesign the process.
+- This discovery phase helped overcome employee skepticism and generated excitement for PI.
+    - Having participated in the examination of the process, caregivers were convinced of the need for rationalizing the process.
+- Showing the opportunities in their own context through a pre-redesign discovery study is effective in combatting the challenge of engaging employees in PI.
+    - This countermeasure identifies a refinement to organizational learning theory.
+ 
+## 4.2. Initial performance deterioration
+- PI efforts often result in an initial decline in performance [Adler and Clark, 1991; Netland and Ferdows, 2016; Nembhard and Tucker, 2011] due to unplanned variations and increased cognitive workload.
+- This decline poses a challenge for the idea of PI, leading to employee rejection of such efforts [Repenning & Sterman, 2002] and failure to fully realize potential improvements [Jasperson, Carter, & Zmud, 2005].
+- Keeping employees engaged can help keep them informed about the redesign and can lead to watchful use of the changing process [Adler et al., 1999; Kolb, 1981].
+    - The healthcare team's participation in the redesign period (July 2014 to April 2015) was organized.
+- During caregiver workshops, participants noted that patients were overwhelmed by the amount of instructions and recognized the lack of consistency among caregiving team members.
+- The caregiving team adopted a two-part patient-education approach (Table 5), with inpatient nurses delivering essential education during the hospital stay (Part I) and outpatient nurses delivering the rest after discharge (Part II).
+    - Outpatient nurses are now required to meet the patient and the inpatient coordinators prior to discharge.
+- Employee engagement in the redesign resulted in specific insights about the patient education process.
+- Frontline caregivers were able to better take care of the teething problems, separating such problems from ones that needed further investigation for improving the process.
+- Participating in redesigning the process also allowed them to build in some adaptation-opportunities, along with standardized practices, which turned out to be useful in mitigating the effects of unplanned variations.
+- These aspects of the implementation minimized initial disruptions and derived lessons from the initial use of the redesigned process.
+- Frontline employee involvement from the start of the process redesign appears to be an effective countermeasure for avoiding the tradeoff between customer satisfaction and process effectiveness.
+ 
+## 4.3. Adaptation in use
+- Processes should have meaningful adherence requirements [Johnson, Burgess, & Sethi, 2020] and not be overly restrictive [Ansari et al., 2014].
+    - Employees may not adopt overly restrictive processes [Nissinboim & Naveh, 2018].
+- The duality of standardization and adaptation can be addressed by designing a process with ostensive aspects and performative aspects [Anand et al., 2012].
+- Developments in the marketing literature have advocated incorporating the role of the customer [Auh, Menguc, Katsikeas, & Jung, 2019; Bendapudi & Leone, 2003].
+- Applying this perspective, input was sought from patients to build in adaptation in use by frontline caregivers for standardized practices.
+- Patient input is important [Catena et al., 2020], but there is little insight on how to effectively do this in a healthcare setting.
+- Facilitator-led focus groups of patients were conducted separately but in parallel with the caregiver workshops.
+    - This enabled an interchange of ideas while maintaining separation to protect privacy.
+    - This combination helped consider aspects that warranted either more standardization or more adaptability-in-use for caregivers.
+- The first patient focus group meeting was used to adjust the topics included in the two parts of the patient education work (Table 5).
+    - Patient feedback was used primarily to inform sequencing.
+    - Patients also pointed to the need for multiple teaching styles.
+- In the second focus group, patients discussed outcomes and instruction delivery aspects and helped resolve inconsistencies.
+- Table 6 gives illustrative examples of the changes in the patient education process that resulted from the redesign.
+- Having patient input in parallel provided insights that were not otherwise considered by the caregiving team and helped build in some adaptation to accommodate variations.
+- Data from the focus groups suggested that some patients preferred visuals while others preferred detailed explanations.
+- Information from the learning styles questionnaire indicated the importance of several learning styles needing to be integrated into patient education.
+- Having patient feedback through parallel workshops provided useful insights into improvement opportunities and enabled the caregivers to design in adaptability for reacting to the varying needs of the patients.
+ 
+## 4.4. Sustainability of redesign and engagement in PI
+- Adherence to established processes is challenging to sustain [Anand et al., 2012; Desai, 2020], especially in high interaction service settings [Ton & Huckman, 2008]. Even after caregivers established handwashing routines under monitoring, compliance rates dropped soon after monitoring was discontinued [Staats et al. 2017].
+- Sustained engagement in PI is also a challenge [Adler et al., 1999; Spear & Bowen, 1999].
+- Middle managers (nursing managers) could play a critical role in sustaining the new process and the initiative for PI [Sitkin, 2020].
+- The institutionalization of a system of huddles helped achieve the objective of defining responsibilities and creating a system and structure for involvement of middle managers in PI. The huddles also ensure seamless handoffs [Prætorius & Hasle, 2019]. Examples of topics discussed in these huddles are:
+    - Patient's aptitude on post-surgical care instructions
+    - Staffing levels in the unit for that day
+    - Hand-off process between inpatient and outpatient unit
+    - Improvements to teaching process
+    - Celebrations and other news
+- The nurse manager from the inpatient unit said, “At first, we were skeptical with the role of daily meetings, we have had this in the past and it failed to sustain. However, given the systematic effort of involving me and my staff from the beginning, I felt it was my role to motivate and keep this improvement process going on over time. We have great buy-in from our day and night shift nurses given their early involvement and they own it within the unit.”
+- Outpatient and inpatient nurse managers made this a part of their routines.
+    - They created a structure to facilitate the huddles, monitored them, and offered problem-solving support.
+- This gave rise to a weekly meeting between the inpatient and outpatient manager that the nursing director also attended.
+- The use of these huddles organically created a tiered management structure that now facilitates escalation of frontline issues to middle management and senior management as appropriate.
+- This system is helping sustain adherence and exploration of PI in the redesigned patient education process.
+    - It has also propagated the practice of huddles in other areas of the hospital, thus helping sustain process-adherence and engagement in PI.
+- Building in adaptation-in-use for processes, helped with frontline employee engagement in the organizational initiative for PI.
+- The huddles that began in May 2015 were still being regularly conducted in the unit as of May 2019.
+- The nurse managers were pivotal in ensuring that frontline nurses had the necessary resources and met with the nursing director on a weekly basis.
+- This research demonstrates that PI can sustain over time even in a high interaction service environment.
+- The countermeasures for sustaining PI, designed inductively, working with the caregivers, also resulted in refinements to organizational learning theory (Table 4).
+- Formalizing these refinements would require testing these countermeasures in different contexts [Groop et al., 2017].
+ 
+# 5. Efficacy of the Process Redesign
+- To legitimize the role of the intervention as a template for process redesign and organization wide initiatives for PI, it was critical to assess the efficacy of the redesign.
+- The impact of redesigning the patient education process was examined by comparing 30-day patient readmission rates before and after the redesign with respect to a control group.
+- Patients' perceptions of care in the kidney transplant unit before and after the implementation of the redesign was also compared with respect to the same control group.
+    - In healthcare contexts, especially those that involve high patient–caregiver interactions, patients' perceptions of care are not always compatible with their health outcomes [Berry Jaeker & Tucker, 2020; Kang, Shah, & Dowd, 2017].
+    - Patients who report higher satisfaction levels would better absorb and use information about post-surgery care [Nair, Nicolae, & Narasimhan, 2013; Sharma, Chandrasekaran, & Bendoly, 2020].
+- The impact of the process redesign was analyzed by comparing before and after scores on the HCAHPS (Centers for Medicare and Medicaid Services (CMS), 2019) for the kidney transplant unit, and with respect to a control group.
+- During January 2013–April 2016, 571 patients underwent kidney transplants at Alpha (treatment group).
+- This patient mix was compared with the population of all kidney transplants conducted in the United States during the study period using data obtained from the National Kidney Foundation.
+    - The average readmission rate for the sample was 40%, which is not significantly different from the national average. Differences in other statistics also were nonsignificant.
+- Performance data was collected from two other transplant units (heart and liver) within the hospital (control sample) after adjusting for patient and other transplant characteristics.
+    - Heart and liver transplant patients were getting similar post-surgery care instructions as kidney transplant recipients.
+    - The heart and liver transplant units only experienced routine hospital-wide quality and safety efforts and did not make other changes.
+- Patient and process data was collected for the 62 heart and 103 liver transplant patients conducted in the same period.
+    - Having a control sample from the same hospital provides a strong test of the effectiveness of the process redesign.
+- Appendix C contains descriptions of the variables used, Appendix D gives the means and standard deviations, and Appendix E shows correlations.
+- The process redesign constituted a quasi-experimental treatment that resulted in an exogenous shock to the patient education process beginning in January 2014.
+- A DID approach [Imbens & Wooldridge, 2009] was used to estimate the causal effects of the redesign, accounting for differences in baseline 30-day readmission rates and HCAHPS scores across the two transplant groups and mitigating the effects of any changes other than the process redesign.
+- The necessary conditions were checked including parallel trends before conducting a DID analysis (Appendix F).
+ 
+## 5.1. 30-day readmission
+- The post-redesign change in patient outcomes was investigated by examining whether a transplant patient got readmitted to the hospital within 30 days in the treatment and control groups.
+- The following relationship was estimated at the patient level for comparing redesign (redesign or post-redesign) and pre-redesign readmissions:
+ 
+    *logit Readmissionð Þi,j,t = β0
+    + β1 Type pij + β2 Phase S = Redesign or Post
+    + β3 Type pij*Phase S = Redesign or Post + θjt + Tαj + δ X ijt:*
+ 
+    - i: indexes each patient
+    - j: indexes each transplant type
+    - t: indexes time in year and quarter periods
+    - Typepij: captures the type of transplant patient
+    - PhaseS = Redesign or Post: represents periods of the redesign compared to the Pre-redesign period
+    - Typepij * PhaseS = Redesign or Post: captures interaction between transplant type and time
+    - Tαj: represents time-invariant transplant controls
+    - Xijt: represents patient-level controls
+    - θjt: represents time-variant process controls for the transplant groups
+ 
+- Logistic regression with robust standard errors [Wooldridge, 2002] was used and the treatment group dummy variable was interacted with the treatment periods to investigate readmission trends.
+- As a verification check, the diff command in STATA 14 was used and controlled for all covariates (Appendix D).
+- The variance inflation factor (VIF) in all the models was well below the threshold value of 10 [Hair, Anderson, Babin, & Black, 2010].
+- Table 7 shows the results of this analysis.
+    - Models 1 and 2 show the likelihood of patient readmission in the redesign and post-redesign periods
+    - These regressions compared the patient education process of the treatment group with the control group in the redesign and post-redesign periods with their pre-redesign characteristics.
+- The results of Model 1 (Table 7) suggest that the patient's likelihood of readmission in the treatment group during the redesign period is no different from that in the control group and pre-redesign period (b = − 0.07).
+    - The benefits of the process redesign can only be seen after the patient education process was fully implemented.
+    - However, no deterioration in performance was found in this period compared to the patients in the control group.
+    - Readmission across both the treatment and control group, however, was worse than in the other periods,  suggesting the likelihood of readmission within 30 days was significantly higher in this period.
+- Model 2 (Table 7) provides the results for the likelihood of readmission post-redesign.
+    - As seen from Model 2, the coefficient of the interaction term between redesign (post) and Kidney is negative and significantly associated with readmissions (b = − 1.39).
+        - Kidney transplant patients' likelihood of readmission within 30 days was lower post-redesign compared to the control group and to the pre-redesign period.
+        - Post-redesign odds of readmission within 30 days were 0.25 times lower when compared to the control group and pre-treatment periods.
+- The patient controls and time-relevant process controls remain consistent across both regression models.
+ 
+## 5.2. Patient satisfaction
+- Monthly HCAHPS data was accessed for both the kidney transplant unit and the liver 1 unit in the hospital.
+- The following relationship was estimated between the process redesign periods and the overall satisfaction ratings at the unit level.
+ 
+    *Overall Patient Satisfactioni,t = β0
+    + β1 Type pi + β2 Phase S = Redesign or Post
+    + β3 Type pi*Phase S = Redesign or Post + θjt + Tαj*
+ 
+    - i: indexes the transplant type
+    - t: indexes time in year and months periods
+    - Type pi: captures the type of transplant patient
+    - PhaseS = Redesign or Post: represents the periods of the process redesign compared to the pre-redesign period
+    - Typepi * PhaseS = Redesign or Post: captures transplant type and time interaction
+    - Tαj: represents time-invariant transplant controls
+    - θjt: represents time-variant process controls for the transplant groups
+ 
+- Robust standard errors were used.
+- Table 8 gives the results of these analyses.
+    - Process-level controls were included, along with relevant time intervals when comparing the two units.
+    - Models 3 and 4 provide results for redesign and post-redesign periods, respectively.
+- Model 3 (Table 8) compares the trends between the baseline period and the redesign period.
+    - The interaction term is negatively associated with HCAHPS score (b = − 0.11), suggesting a decline in HCAHPS performance for the kidney transplant unit between the redesign and baseline periods, when compared to a similar change in HCAHPS scores for the control group.
+- Model 4 gives the HCAHPS results for the post-redesign period.
+    - The interaction term between Redesign (Post) and Kidney is positively associated with the overall patient satisfaction ratings (b = 0.09).
+        - The overall change in HCAHPS scores for the kidney unit between the post-redesign and baseline period was higher when compared to a similar change for the control group.
+- The robustness of the empirical results was verified for both sets of analyses, the 30-day readmission and patient satisfaction.
+    - The robustness checks comprised changing the time window for impact of process redesign from 12 months to 9 months, and repeating the main analyses examining only cadaveric kidney transplants as the treatment group, and comparing it with the heart and liver patient control group.
+    - The interpretation of the results remained unchanged.
+ 
+# 6. Discussion
+- The purpose of this study was to develop a methodology for sustaining PI in high interaction service organizations such as hospitals.
+- There is limited research in operations management and organizational science that has offered concrete recommendations on how to sustain PI.
+- The four challenges to sustaining PI that were identified had been discussed in the literature without guidelines for overcoming them. The research offers preliminary evidence on ways to overcome these challenges and sustain PI.
+- The four main contributions of this research are:
+    - First, conducting a process discovery prior to considering process redesign assures employee buy-in for initiating PI.
+        - While senior management support was present, the nurses and surgeons at the hospital were uncommitted to the process redesign.
+        - The results of the pre-redesign study, however, generated a shift in the attitudes of nurses and surgeons toward the redesign, leading to their enthusiastic participation.
+        - By demonstrating the effectiveness of a pre-redesign study and analysis on caregiver acceptance of the need for process redesign, the research adds specificity that can help organizations better initiate process redesign and efforts for PI that are sustained over time.
+    - Second, insights are offered on implementing process redesign in high interaction service settings.
+        - Patient input was included in the redesign of the process in a parallel fashion.
+        - Studies suggest surveying customers to gauge their perceptions of the process and using them for the design.
+        - The research delineates a new way for incorporating patient feedback in improving healthcare delivery.
+        - The initially sequential then separate but simultaneous collection of caregiver and patient viewpoints can be useful in synthesizing information and counterbalancing process features.
+            - This combines the benefit of standardization with the ability to adapt certain features based on the patient needs and preferences and achieve better patient health outcomes and higher customer satisfaction.
+    - Third, insights are offered on how to maintain organizational initiatives for PI and create a mindset of continuous improvement.
+        - The success in sustaining the initiative introduced through the intervention can be attributed to the midlevel management's continuous engagement in huddles.
+        - This middle-up-down method also helps frontline nurses and senior leadership connect in a timely and sustained manner.
+        - Middle managers are critical elements in sustaining PI following process redesign.
+    - The fourth contribution comprises a demonstration of the IBR approach for studying ill-structured problems such as sustaining PI.
+        - The research began inductively, with the intervention targeting the ill-structured problem of initiating, executing, and sustaining PI.
+        - Using deductive logic, the effects of the process redesign were examined, controlling for specific unobservable factors pointed out as relevant by the caregivers.
+
+</details>
+	
