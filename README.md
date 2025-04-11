@@ -1672,4 +1672,280 @@ This research investigated how to make lasting improvements (Process Improvement
         - Using deductive logic, the effects of the process redesign were examined, controlling for specific unobservable factors pointed out as relevant by the caregivers.
 
 </details>
+
+
+```
+title: When Top-Down Meets Bottom-Up: Legislative Signals and Online Crowdfunding
+authors: Anqi Wu, Aravinda Garimella, Ramanath Subramanyam
+journal: Information Systems Research
+published: 2025
+```
+ 
+# Executive Summary
+- This study investigates the impact of legislative signals on online giving behavior, focusing on the ratification of the Every Student Succeeds Act (ESSA) and its effects on donations to public schools through DonorsChoose.org.
+- The research questions are: (1) What are the effects of a legislative signal on overall and local donation behavior online? (2) What are the mechanisms underlying these effects?
+- Key **theoretical** / **conceptual framework** discussions:
+    -   **Signaling Theory**: Legislative signals, such as ESSA ratification, convey information about governmental attention to public causes, influencing donor perceptions and actions.
+    -   **Crowding Out/In**: Legislative signals can lead to crowding out (decrease) of overall donations as donors perceive reduced need for their contributions, while also causing crowding in (increase) of local donations due to heightened awareness of local needs.
+    -   **Information Push and Pull**: These mechanisms explain how donors become aware of legislative signals, with information push (media coverage) and information pull (Internet searches) influencing donation behavior differently.
+-   Key **findings** / arguments:
+    -   ESSA ratification led to an 8% decrease in total donation amounts and a 4% decrease in the proportion of funded projects.
+    -   Local donations increased by 11.9%, while nonlocal donations decreased by 15.7% following ESSA ratification.
+    -   The shift towards local donations was stronger among donors with higher awareness of ESSA through information pull, whereas the decrease in nonlocal donations was more influenced by information push.
+    -   Schools with students of lower socioeconomic status (SES) experienced a sharper decline in the proportion of projects funded compared to schools with students of higher SES.
+-   **Managerial implications**: Platform designers should use targeted nudges (like focused campaigns) to prevent inequitable resource distribution. Teachers need to communicate to donors to fill the gaps left by policy implementations. Policymakers should acknowledge market failures in funding and incentivize philanthropy to meet the resource gaps.
+ 
+#legislative_signals #online_crowdfunding #public_education #signaling_theory #crowding_out #crowding_in #information_push #information_pull #socioeconomic_status #digital_platforms #familiarity_bias #home_bias #essa #quasi_experiment #difference_in_differences
+
+<details>
 	
+  <summary>Click to expand sections</summary>
+  
+# 1. Introduction
+- Buchanan [1950], Augenblick et al. [1997], and Baker [2021] argue that equity and adequacy in funding are prerequisites for equal educational opportunity, but public schools in the U.S. are underfunded and inequitably funded [Farrie and Johnson, 2015].
+- Teachers often spend their own money on classroom supplies, especially in high-poverty schools [Walker, 2019], so they seek outside funds for classroom projects due to budget limitations.
+- Online crowdfunding platforms have emerged to help alleviate these resource shortages [Burtch et al., 2013, 2014; Hong et al., 2018; Burtch and Chan, 2019; Geva et al., 2019; Kim and Viswanathan, 2019; Lin et al., 2022].
+    -   These platforms, like DonorsChoose.org, provide teachers with efficient access to resources, mitigating market failures and transcending geographic constraints.
+    -   DonorsChoose has raised over $1.6 billion since 2000 for teacher-led projects.
+-   This bottom-up resource mobilization occurs within a context of top-down legislative activity, such as the Every Student Succeeds Act (ESSA) of 2015 [McGuinn, 2016; Egalite et al., 2017; Jacob, 2017; Hess and Eden, 2021].
+    -   ESSA is a devolution law, decentralizing public sector responsibilities [Senate Committee on Health, Education, Labor, and Pensions].
+    -   The announcement of such laws can signal societal needs and shift public perceptions [Tankard and Paluck, 2016], even before implementation.
+-   Despite growing IS research on charitable crowdfunding, there's limited work on the interaction between top-down signals and bottom-up efforts to address resource gaps [He et al., 2024].
+    -   This paper examines how the ratification of ESSA affected donor behavior and the fundraising ecosystem.
+    -   It draws from theories in philanthropy, public goods research, and information economics, contributing to the IS literature on crowdfunding success [Burtch et al., 2013, 2014, 2015; Younkin and Kuppuswamy, 2018; Burtch and Chan, 2019; Yang et al., 2020; Lin et al., 2022].
+- Legislative signals could alter overall giving or realign donor interests to local initiatives [Wagner and Wheeler, 1969; Bekkers and Wiepking, 2011].
+- Research Questions:
+    -   *RQ1*: What are the effects of a legislative signal on overall and local donation behavior online?
+    -   *RQ2*: What are the mechanisms underlying these effects?
+- A 20-quarter (2015Q1–2019Q4) panel data set, representing 73,303 schools (nearly 70% of all U.S. K-12 public schools) and totaling 4,40,617 observations, was collated to study the research questions.
+    -   These data were combined with school demographics and characteristics from the National Center for Education Statistics (NCES), as well as ESSA-related Internet search data and media coverage data from Google Trends and LexisNexis.
+- The study adopts a staggered difference-in-differences (DD) research design, consistent with methodological approaches [Seamans and Zhu, 2014; Zhang et al., 2024] used to examine exogenous policy changes, focusing on donor behavior changes following state ESSA ratifications.
+    -   The state plan sign-off by the U.S. Department of Education is the tangible event signaling legislative action.
+    -   The geographic and temporal variation in ratification events helps disentangle the legislative signal's effect from macro trends [Parvin and Beruvides, 2021]. An event-study analysis is also employed for methodological triangulation.
+- Key findings:
+    -   Donation patterns shifted substantially following state ESSA ratifications, becoming more local.
+    -   Local donations increased by 11.9%, while nonlocal donations decreased by 15.7%.
+    -   There was a net negative effect, with an 8% decline in total donation amounts ($2.45 million per quarter for the sample schools). Low-SES schools experienced a sharper funding drop.
+    -   Two awareness mechanisms were identified: information push and information pull, with donors showing higher ESSA awareness exhibiting stronger donation behavior shifts.
+- This study contributes to IS literature and practice by:
+    -   Examining how signals from the external institutional environment influence crowdfunding platforms [He et al., 2024].
+    -   Combining theoretical perspectives on familiarity bias and signaling to establish geographically asymmetric effects of legislative signaling.
+    -   Examining two distinct awareness channels, information push and information pull.
+    -   Highlighting the resource-divide problem and suggesting platform interventions like targeted nudges and improved matching processes.
+ 
+# 2. Research Context
+- The data were sourced from DonorsChoose.org, a platform where individuals donate directly to public school classroom projects.
+    -   By early 2024, over $1.6 billion USD had been raised, with more than 80% of U.S. public schools (Pre-K to 12) having posted projects.
+    -   The majority of requests come from low-resource schools.
+- Project page descriptions on DonorsChoose include needs, school information, location, poverty level, subject, grade level, number of students, and donor contributions.
+- DonorsChoose uses an "all-or-nothing" model: teachers receive donations only if the funding goal is met.
+    -   If a project isn't fully funded within four months, donations are refunded as campaign credits.
+- The Every Student Succeeds Act (ESSA), signed into law on December 10, 2015, is a major reauthorization of the 1965 Elementary and Secondary Education Act (ESEA).
+    -   ESSA decentralizes public education by granting states and local districts greater authority in setting standards.
+    -   It attracted substantial local and national media coverage, described as "the largest devolution of federal control to the states in a quarter-century" [Wall Street Journal, 2015].
+- Content analysis of over 10,000 news articles from Lexis Nexis revealed that over 50% emphasized devolution as the most important theme.
+    -   Interviews with education policy researchers and teachers corroborate devolution's salience.
+- While ESSA was signed in December 2015, state ESSA plans took effect at different times during the 2017–2018 school year, based on U.S. Department of Education approval.
+ 
+# 3. Literature Review
+- This work builds upon and contributes to two streams of IS literature: online crowdfunding and signaling in online communities.
+ 
+## 3.1. Online Crowdfunding
+-   Online Crowdfunding is a widely studied outcome in the IS literature [Burtch et al., 2014; Burtch and Chan, 2019; Geva et al., 2019; Yang et al., 2020].
+-   Prior research has examined factors like crowdfunder characteristics [Lin and Viswanathan, 2016; Younkin and Kuppuswamy, 2018], reward structures [Burtch et al., 2015; Yang et al., 2020; Lin et al., 2022], risk disclosure [Kim et al., 2022], social networks [Hong et al., 2018], historical data [Burtch et al., 2013; Kim and Viswanathan, 2019; Jiang et al., 2022], algorithm choices [Song et al., 2022], and charity metrics [Kessler and Milkman, 2018; Exley, 2020].
+-   A relevant sub-stream focuses on public education crowdfunding [Meer, 2014; Wash and Solomon, 2014; Weinmann and Mishra, 2019; Gao et al., 2021; Xiao and Yue, 2021; Keppler et al., 2022].
+    -   **Geographical proximity** between lenders and borrowers positively influences outcomes, suggesting a home bias [Galak et al., 2011; Burtch et al., 2014; Lin and Viswanathan, 2016]. Proximity generates trust even without economic benefits [Lai and Teo, 2008].
+-   The work contributes by:
+    -   Identifying conditions that intensify home bias and explaining underlying reasons.
+    -   Highlighting that home bias is dynamic and influenced by external signals.
+    -   Addressing a research gap by examining how external signals influence crowdfunding activities [He et al., 2024].
+ 
+## 3.2. Signaling in Online Communities
+- A substantial body of IS literature has examined the effects of signaling on online platform user behavior.
+- Examples include website informativeness [Pavlou et al., 2007] and website quality [Wells et al., 2011] in e-commerce, as well as signals in crowdsourcing [Majchrzak and Malhotra, 2016], social media [Nian and Sundararajan, 2022], matching platforms [Shi and Viswanathan, 2023], and online service marketplaces [Zheng et al., 2023].
+- Crowdfunding studies examine signaling from resource providers and seekers.
+    -   Resource seekers provide personal information to build trust [Ahlers et al., 2015; Geva et al., 2019].
+    -   Project pitches contain signals like readability and quality of visuals [Mollick, 2014].
+    -   Resource provider signals include word-of-mouth [Qiu, 2013], expert investment [Kim and Viswanathan, 2019], and recommendations. Signals from investors in the external environment also matter [He et al., 2024].
+-   This paper contributes by:
+    -   Examining the effect of institutional signals on online donor behavior, an area previously unexplored in the online world.
+    -   Examining the two mechanisms of how institutional signals are received: information push and information pull [Cybenko and Brewington, 1998].
+    -   Focusing on how legislative signaling can impact the perceived worthiness of an entire class of initiatives, rather than just individual initiatives.
+ 
+# 4. Theory and Hypotheses
+- Digital platforms exist within social, cultural, economic, political, technological, and regulatory contexts. Formal institutions (e.g., governments) take measures aimed at societal problems, transmitting signals that shape individuals’ beliefs [Tankard and Paluck, 2016].
+- The study examines the effect of legislative signals on online donor behavior, focusing on governmental action and the informational content of legislation (e.g., ESSA's devolutionary focus).
+- Donor awareness is essential for any change in giving behavior. Donors can receive signals through information push and pull [Cybenko and Brewington, 1998].
+    -   Information pull is when individuals request information (e.g., Internet search).
+    -   Information push is when information is sent without being solicited (e.g., newspaper).
+- Efficacious signals are characterized by observability and frequency [Janney and Folta, 2003, 2006; Park and Mezias, 2005].
+ 
+## 4.1. Overall Crowding Out
+- Legislative signals can indicate governmental attention to a public cause, potentially reducing overall online giving.
+- The **substitution-based view of volunteering** suggests that donors see their actions as substitutes for government action [Dekker and Halman, 2003; Prodi et al., 2023].
+    -   If the government is devoting resources to a cause, donors may discount their contributions [Frey and Jegen, 2001; Nyborg and Rege, 2003; Bekkers and Wiepking, 2011].
+- **Public goods theory** predicts that the nonprofit sector is larger when governments fail to meet societal needs [Weisbrod, 1978; Salamon and Toepler, 2015]. When governments step in, the perceived necessity for nonprofit intervention diminishes.
+- Economic crowding-out theories have mixed evidence [Warr, 1983; Roberts, 1987; Andreoni, 1990]. An overall crowding out effect is proposed even without explicit dollar-for-dollar tradeoffs.
+    -   Economic models assume full information on the part of donors, which empirical data often contradict [Handy, 2000; Horne et al., 2005; Shah et al., 2015; Lergetporer et al., 2016].
+    -   Citizens rely on coarse signals and simple cues [Simon, 1990; Kahneman and Tversky, 2013]. Information push, through media coverage, shapes public perception.
+- *H1*: A legislative signal pertaining to a public cause will lead to an overall decrease in online donations to the cause.
+ 
+## 4.2. Local Crowding In
+- The informational content of a signal matters for decision-making [Arrow, 1973]. Information pull is likely to encourage potential donors to move from hesitation to active contribution.
+- *H2*: A legislative signal with a devolutionary focus (informational content) will lead to a redistribution of online donations toward local causes.
+- With devolutionary legislation, information-seeking points donors to greater delegation of control to local authorities. IS literature notes the existence of home bias [Galak et al., 2011; Burtch et al., 2014; Lin and Viswanathan, 2016].
+- Devolutionary legislative signaling has the potential to motivate donors to respond more enthusiastically to requests from teachers in their state and local communities.
+- Specifically, the message of devolution will lead to:
+    -   Draw public attention to the challenges faced by local schools, as donors become more aware of local needs.
+    -   Donors are more likely to give when they feel that their individual actions make a difference, believing that their own actions will make a bigger difference.
+    -   Familiarity effects, where donors are more inclined to support causes they know well [Jiang et al., 2019], are likely to be amplified as they gain more knowledge about local schools.
+- This aligns with the **complementarity theory** [Dekker and Halman, 2003; Dahlberg, 2005] of voluntary action, where volunteers see their efforts as complementary to governmental action. Donors perceive a diminished federal role and an increased local role in education.
+ 
+# 5. Data
+- The study systematically assembled a multifaceted data set from four independent sources.
+ 
+## 5.1. Data Sources
+- Donation data was obtained from DonorsChoose.org via their API, including details about classroom projects, teachers, schools, donors, and project donations.
+- School demographic information came from the NCES, the Department of Education’s database on public Pre-K to Grade 12 education.
+- Donor awareness was measured using:
+    -   Data on Internet search traffic for ESSA-related terms from Google Trends.
+    -   News and media releases about ESSA from Lexis Nexis.
+- The school-quarter-level data set included all active U.S. public Pre-K to Grade 12 schools in both DonorsChoose and the NCES system.
+    -   The final sample consisted of 73,303 unique schools, covering nearly 70% of U.S. public schools.
+- The main analysis focused on 20 quarters from 2015 to 2019, ensuring that ESSA ratifications fell within the central part of the study period, with quarters as the time unit.
+ 
+## 5.2. Variable Definitions
+-   Dependent Variables:
+    -   *Amount Raised*: Total dollar amount raised by the school in a given quarter [Younkin and Kuppuswamy, 2018; Cornelius and Gokpinar, 2020].
+    -   *Proportion Funded*: Proportion of fully funded projects.
+    -   *Local Amount*: Contribution amount from local donors (same first three zip code numbers).
+    -   *Nonlocal Amount*: Contribution amount from donors outside this area.
+-   Independent and Control Variables:
+    -   *ESSA*: Binary variable indicating the date on which the respective state’s ESSA plan had been approved.
+    -   A broad set of control variables were included, such as Amount Requested, Prop. Basic Projects, and Minority [Meer, 2014; Gao et al., 2021].
+- School and time fixed effects were used to control for unobserved heterogeneity. Standard errors were clustered at the state level to control for potential correlations.
+ 
+# 6. Empirical Analysis and Results
+- The effects of state ESSA ratifications on school donations were estimated using a model specification. The empirical findings on overall fundraising success, local and nonlocal giving were presented.
+ 
+## 6.1. Empirical Strategy
+- The individual ESSA plans for different states went into effect at different time points, providing a quasi-experimental setting to examine the legislative signal's effect [Seamans and Zhu, 2014].
+- A staggered difference-in-differences (DD) model was adopted using an ordinary least squares (OLS) estimation with fixed effects.
+- The model specification for the DD analysis is as follows:
+ 
+    *Y<sub>ijt</sub> = β · ESSA<sub>ijt</sub> + γ · X<sub>ijt</sub> + School<sub>i</sub> + Quarter<sub>j</sub> + Year<sub>t</sub> + ε<sub>ijt</sub>*
+ 
+    - *Y<sub>ijt</sub>* denotes the dependent variables: Amount Raised, Proportion Funded, Local Amount, and Nonlocal Amount. The logs of the dependent variables measured in dollar amounts were used.
+    - *ESSA<sub>ijt</sub>* is the treatment indicator variable.
+    - *X<sub>ijt</sub>* represents a vector of time-variant control variables.
+    - *School<sub>i</sub>*, *Quarter<sub>j</sub>*, and *Year<sub>t</sub>* are school and time fixed effects.
+- Preliminary checks to verify the empirical framework:
+    - Placebo treatment simulations were conducted by generating random dates during the ratification period [Eftekhari et al., 2023; Dobrescu et al., 2024].
+    - Event-study analyses and a Goodman-Bacon decomposition were performed to check the validity of the staggered DD specification [Goodman-Bacon, 2021].
+    - Falsification tests were conducted to rule out demand-side shifts in teacher requests.
+ 
+## 6.2. Results
+- Most schools experienced declines in crowdfunding success after their respective state plan approvals.
+ 
+### 6.2.1. Negative Overall Effect on Crowdfunding Success
+- The negative and significant coefficients of the variable ESSA indicate that schools in states with ratified ESSA plans saw significantly inferior crowdfunding outcomes (corroborating Hypothesis 1).
+-   Following their state’s ESSA ratifications, schools saw a drop of 8% in the amount raised and a 4% drop in the proportion of projects that met their funding goals.
+ 
+### 6.2.2. Increase in Local Donations and Decrease in Nonlocal Donations
+- A positive coefficient of ESSA for Local Amount and a negative coefficient Nonlocal Amount was observed, with both estimated coefficients statistically and economically significant.
+- Schools raised 11.9% more from local donors and 15.7% less from nonlocal donors (corroborating Hypothesis 2). ESSA ratifications redistributed online donations, leading to increased localization in crowdfunding.
+ 
+## 6.3. Mechanism Examination: Information Push and Information Pull
+- The assumption that citizens are aware of the legislative signal and examine information push and information pull was tested.
+- To capture information push, a binary variable, Push, was constructed to indicate whether a school’s donations primarily originated from states with intensive ESSA-related news coverage.
+- To examine information pull, Google Trends was used to track ESSA-related search traffic, and a binary variable, Pull, was created to indicate whether a school’s donations primarily originate from states displaying higher than median interest in the search terms.
+- When jointly considering the effects of information pull and push, distinct results for local and nonlocal donations were observed.
+- The increase in local donations induced by legislative signals is shaped mainly through information pull via active search, although the decrease in nonlocal donations is more likely to be driven by information pushed through news and media releases.
+ 
+## 6.4. Post Hoc Analyses
+- Impacts on equity were further investigated by focusing on low-SES schools.
+ 
+### 6.4.1. Impacts on Low-SES and Title I Schools
+- Funding success (proportion of projects funded) decreased to a larger extent for low-SES schools following state ESSA ratifications.
+- The coefficients of the interaction terms involving the three variables, ESSA × Low-Income, ESSA × Minority, and ESSA × Title I, are all negative and significant at the 5% level.
+- Title I schools and schools with a higher percentage of low-SES students were disproportionately impacted by the shift in donor behavior following the ESSA ratifications.
+ 
+### 6.4.2. Impacts on Number of Donors vs. Per-Donor Amount
+- The number of overall and local donors remained stable, although the average amount contributed by donors both overall and locally was impacted.
+- This implies that the legislative signal did not substantially change the pool of donors but significantly changed donation behavior.
+ 
+### 6.4.3. Evaluation of Alternative Explanations and Additional Robustness Checks
+- A series of additional robustness checks were performed to confirm that possible confounds or alternative explanations did not drive the main results.
+ 
+# 7. Discussion
+- This study finds that legislative signals have substantial effects on online donor behavior, corroborating the hypothesis that ESSA leads to greater localization of online donations.
+- The net effect is an 8% drop in the average amount raised by schools through the platform, totaling an average of $2.4 million per quarter.
+- The effects manifested through donors’ behavioral shifts, aligning consistently with information pull (Internet search) and information push (media coverage). Schools with a greater percentage of low-SES students were more adversely affected.
+ 
+## 7.1. Theoretical Implications
+- Platforms make information accessible beyond geographical constraints [Gefen and Carmel, 2008; Chen and Horton, 2016].
+- This study contributes to IS crowdfunding literature.
+    -   This is the first study to hypothesize and demonstrate geographically asymmetric effects of external signals on fundraising outcomes, contributing to the understanding of familiarity bias and home bias [Lin and Viswanathan, 2016; Sabzehzar et al., 2023].
+    -   Top-down legislative signaling, that has not been previously examined. It provides evidence of hyperlocalization in online crowdfunding.
+    -   The institutional environment effect on crowdfunding platforms. The signal shapes donors’ perceived worthiness of initiatives.
+ 
+## 7.2. Managerial Implications
+- Given factors observable in other domains, results can provide predictions about online crowdfunding efforts in other domains (healthcare, financial services, utilities, poverty, small business growth, entrepreneurship, etc.).
+- Interface design can be used to align user behavior with platform goals.
+- Timed and deliberate nudges, such as targeted campaigns, reprioritized project placement, and email promotions, become increasingly important surrounding major policy announcements.
+- Platforms might consider explicitly exposing donors from wealthy areas to projects from schools in poorer areas to counteract the potential “rich-get-richer” problem.
+- Teachers may need to remind donors that the effects of federal measures such as ESSA trickle down to the schools only gradually and that many day-to-day classroom needs still remain unmet.
+- Policymakers need to engage with platforms to help them serve as counter-forces against inefficiencies. Policymakers could seek to mitigate such problems by, for example, providing tax-based incentives for certain forms of philanthropy that promote the equitable distribution of resources.
+ 
+---
+# Executive summary of 1. Introduction
+-   Public schools face underfunding and inequitable funding, pushing educators to seek external funds through online crowdfunding.
+-   Online crowdfunding platforms have facilitated fundraising efforts to alleviate resource shortages and mitigate geographic constraints.
+-   The study examines the interaction between top-down legislative signals, such as the Every Student Succeeds Act (ESSA), and bottom-up efforts on crowdfunding platforms.
+-   The research questions are: (1) What are the effects of a legislative signal on overall and local donation behavior online? (2) What are the mechanisms underlying these effects?
+-   The study finds a shift in donation patterns following ESSA ratification, with increased localization and a net decrease in overall funds raised.
+ 
+# Executive summary of 2. Research Context
+-   The data were sourced from DonorsChoose.org, a leading online crowdfunding platform for public school classroom projects.
+-   DonorsChoose operates on an "all-or-nothing" model, and the majority of requests come from low-resource schools.
+-   The Every Student Succeeds Act (ESSA) decentralizes public education and attracted substantial media coverage.
+-   State ESSA plans took effect at different times during the 2017–2018 school year, based on U.S. Department of Education approval.
+ 
+# Executive summary of 3. Literature Review
+-   The study builds upon literature in online crowdfunding and signaling in online communities.
+-   Prior research has examined factors influencing crowdfunding outcomes, including crowdfunder characteristics, reward structures, social networks, and charity metrics.
+-   Geographical proximity between lenders and borrowers has a positive influence on online crowdfunding outcomes, suggesting a home bias.
+-   Signaling in online communities has been studied in various contexts, including e-commerce, crowdsourcing, and social media.
+-   This study contributes by examining the effect of institutional signals on online donor behavior and exploring the mechanisms of information push and pull.
+ 
+# Executive summary of 4. Theory and Hypotheses
+-   Formal institutions transmit signals that shape individuals’ beliefs about societal needs.
+-   The study examines the effect of legislative signals on online donor behavior, focusing on governmental action and the informational content of legislation.
+-   Donor awareness is essential for changes in giving behavior, with signals received through information push and pull.
+-   The hypotheses are:
+    -   *H1*: A legislative signal pertaining to a public cause will lead to an overall decrease in online donations to the cause.
+    -   *H2*: A legislative signal with a devolutionary focus will lead to a redistribution of online donations toward local causes.
+ 
+# Executive summary of 5. Data
+-   A multifaceted data set was assembled from four independent sources: DonorsChoose.org, NCES, Google Trends, and Lexis Nexis.
+-   The data set included 73,303 unique schools, covering nearly 70% of U.S. public schools.
+-   The main analysis focused on 20 quarters from 2015 to 2019.
+-   Dependent variables included Amount Raised, Proportion Funded, Local Amount, and Nonlocal Amount.
+-   The main independent variable was ESSA, and control variables were included based on prior research.
+ 
+# Executive summary of 6. Empirical Analysis and Results
+-   The study uses a staggered difference-in-differences (DD) model to estimate the effects of state ESSA ratifications on school donations.
+-   Preliminary checks were performed to verify the empirical framework, including placebo treatment simulations, event-study analyses, and falsification tests.
+-   The results show a negative overall effect on crowdfunding success, with a decrease in total donation amounts and the proportion of funded projects.
+-   Local donations increased, while nonlocal donations decreased following ESSA ratification.
+-   Information pull strengthened the effects on local donations, while information push magnified the reduction in nonlocal donations.
+-   Low-SES schools experienced a sharper decline in funding.
+ 
+# Executive summary of 7. Discussion
+-   Legislative signals have substantial effects on online donor behavior, leading to greater localization of online donations.
+-   The net effect is a decrease in the average amount raised by schools.
+-   The effects manifest through donors’ behavioral shifts, aligning with information pull and information push.
+-   This study contributes to IS crowdfunding literature by examining geographically asymmetric effects of external signals and the interaction between top-down policy and bottom-up crowdfunding efforts.
+-   The study provides managerial implications for platform designers, public school administrators, teachers, and policymakers.
+
+</details>
