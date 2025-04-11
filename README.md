@@ -1,6 +1,308 @@
 # 
 
 ```
+title: Economics of AI and human task sharing for decision making in screening mammography
+authors: Mehmet Eren Ahsen, Mehmet U. S. Ayvaci, Radha Mookerjee & Gustavo Stolovitzky
+journal: Nature Communications
+published: 2025
+```
+# Executive Summary
+- This study evaluates the economic feasibility of incorporating **AI** into **mammography screening** in healthcare settings, considering full or partial integration.
+- Key **theoretical** / **conceptual framework** discussions:
+    - Optimization model: designed to minimize mammography screening costs
+        - Three strategies are compared: expert-alone, automation, and delegation.
+        - Statistical principles of predictive AI and economic implications of prediction-based decisions are incorporated.
+- Key **findings** / arguments:
+    - Disease prevalence is a significant factor in determining the optimal AI strategy due to trade-offs between costs of false positives and false negatives.
+    - The delegation strategy, involving task allocation between radiologists and AI, can lead to cost savings of 17.5% to 30.1% compared to relying solely on human experts.
+    - The optimal AI implementation strategy depends on the interplay between radiologist accuracy, cost factors, and AI algorithm performance.
+    - Automation becomes the optimal strategy once AI algorithms surpass a specific performance level.
+    - Higher liability for machines could shift preferences away from automation to expert-alone solutions.
+    - A human-machine combined workflow (delegation strategy) emerges as the most effective option, potentially achieving significant cost reductions.
+ 
+#ai_in_healthcare #mammography_screening #cost_optimization #decision_making #human_ai_collaboration #disease_prevalence #false_positives #false_negatives #delegation_strategy #automation #expert_alone #liability_costs #medical_malpractice #machine_learning #capitation
+
+ <details>
+  <summary>Click to expand sections</summary>
+	
+# 1. Introduction
+- Mammography is crucial for early breast cancer detection, with nearly 39 million women in the US undergoing screening in 2021 [Author, year].
+    - The growing incidence of breast cancer and shortage of specialized radiologists create a demand-supply gap that AI can potentially bridge [Author, year].
+- Recent studies suggest AI algorithms still underperform compared to radiologists in mammography-based cancer screening [Author, year].
+    - Further research is needed before fully integrating AI into clinical practice [Author, year].
+    - AI can triage cases by identifying mammograms with no significant findings, reducing radiologists' workload and generating cost savings.
+    - AI can promptly refer cases with potential abnormalities to radiologists for further evaluation, ensuring timely and accurate patient care.
+    - A Swiss clinical trial showed AI-assisted screening achieved cancer detection rates comparable to double-reading by radiologists, suggesting AI's potential as a triaging tool [Author, year].
+- This research evaluates the economic viability of integrating AI-driven solutions into breast cancer screening programs.
+    - We assess the cost and performance outcomes against radiologist-only solutions.
+    - We examine scenarios where AI could completely replace radiologists and explore a strategy in which AI provides an initial assessment, delegating specific cases to radiologists.
+    - To achieve our research objective, we formulate and solve an optimization model comparing three strategies: expert-alone, automation, and delegation.
+    - Our model is grounded in the statistical principles of predictive AI and the economic implications of prediction-based decisions.
+    - We leverage real-world mammography data from a mammography crowdsourcing challenge to empirically validate our results.
+    - We aim to demonstrate how a healthcare organization can design its mammography operations, allocate tasks between radiologists and AI algorithms, and quantify the outcomes of such an arrangement.
+ 
+# 2. Results
+- We evaluate three distinct strategies for decision-making in mammography, each incorporating different degrees of AI involvement: expert-alone, delegation, and automation.
+    - **Expert-alone**: Radiologists independently classify patients as either sick (*s*) or healthy (*h*) based on mammograms.
+    - **Delegation**: AI screening identifies cases, with certain instances delegated to radiologists for final evaluation.
+        - The AI algorithm evaluates the risk of breast cancer using mammography data and generates a continuous risk score, *r*.
+        - If *r* is lower than a threshold *tD*, the algorithm classifies the patient as healthy (*h*).
+        - If *r* exceeds *tD*, the case is referred to a human expert for further evaluation and final classification as either sick (*s*) or healthy (*h*).
+        - The decision rule for the delegation strategy, *d(r)*, is:
+ 
+        d(r) = h if r < tD
+ 
+        η ∈ {h, s} otherwise
+        - When *tD* approaches −∞, the delegation strategy converges to the human-only strategy.
+    - **Automation**: Relies entirely on the AI algorithm.
+        - The AI evaluates each mammogram and generates a risk score, *r*.
+        - If *r* is less than or equal to a threshold *tA*, the patient is labeled as healthy (*h*).
+        - If *r* exceeds *tA*, the patient is labeled as sick (*s*).
+        - The automation strategy’s decision rule *a(r)* is:
+ 
+        a(r) = h if r ≤ tA
+ 
+        s otherwise
+    - No additional follow-up is required for patients classified as healthy (*h*), regardless of the chosen strategy.
+    - When a patient is classified as sick (*s*), follow-up procedures may be conducted.
+    - The disease prevalence in the population is represented by λ.
+ 
+## 2.1. Classification Outcomes and Probabilities
+- The classification outcome falls into one of four categories: true positive (TP), false positive (FP), true negative (TN), or false negative (FN).
+    - *P(o)* represents the probability of a specific outcome, where *o* ∈ {TP, TN, FP, FN}.
+    - Effective screening aims to maximize *P(TP)* and *P(TN)* while minimizing *P(FP)* and *P(FN)*.
+    - Since radiologists do not provide exact risk assessment values, we directly quantify the probabilities associated with each outcome, *PE(o)*, where *o* ∈ {TP, TN, FP, FN}.
+    - For algorithms, performance is assessed based on their generated risk assessment scores, using the area under the ROC curve (AUC).
+    - The AI algorithm assigns risk scores that follow two distinct normal distributions: one for the healthy population and another for the sick population.
+        - The mean risk score for sick patients (*μs*) is greater than that for healthy patients (*μh*), such that *μh* < *μs*.
+        - Equal variances (*σ*) are assumed for both distributions.
+        - Under these assumptions, the risk prediction for a specific mammogram is assumed to follow a normal distribution, *N(μs, σ)* for patients with the disease and *N(μh, σ)* for those without it.
+        - The performance of an algorithm, in terms of AUC, is then defined as:
+ 
+        AUC = Φ(μs - μh) / (√2 * σ) = Φ(I/√2)
+        - *Φ(.)* represents the standard normal cumulative distribution function and *I := (μs - μh) / σ* represents the information content of the algorithm [Author, year].
+        - The information content measure, *I*, has a monotonic relationship with the AUC metric.
+ 
+## 2.2. Expected Costs and Optimization
+- The expected cost of a screening decision incurred by a healthcare organization under the delegation strategy, denoted as *CD(tD)*, and the automation strategy, denoted as *CA(tA)*, is determined by the respective thresholds applied in each approach.
+    - Each use of the algorithm incurs a constant cost, denoted as *ca*.
+    - The cost of involving a human expert in the decision is denoted as *ce*.
+    - The healthcare organization incurs a cost of *cf* for each follow-up procedure performed when a patient has a suspicious finding.
+    - The organization faces potential litigation risks if a sick patient is mistakenly classified as healthy.
+        - The expected litigation cost for a false negative (FN) outcome is defined as *cl*.
+- The healthcare organization’s objective is to reduce the costs associated with mammography-based breast cancer screening using AI.
+    - This aligns with population-based payments for primary care services through capitation arrangements.
+    - The healthcare organization wants to minimize its total costs without compromising physician autonomy in clinical decision-making.
+    - The organization’s overall objective, *C***, is formally defined as:
+ 
+    C* := min{CE, C*D, C*A}
+ 
+    Where:
+ 
+    C*D := min tD CD(tD)
+ 
+    C*A := min tA CA(tA)
+    - We make two simplifying assumptions in solving the model, Assumptions 1 and 2, which are technically and practically satisfied.
+    - The overall optimization involves comparing optimal solutions with the expected cost of the expert-alone strategy, CE.
+    - Theorem 1 in Section S1 presents closed-form solutions for optimal thresholds.
+ 
+## 2.3. Optimal Strategy Characterization
+- We analytically derive the optimal strategy building on insights from the value of information and medical decision-making literature [Author, year; Author, year].
+    - The characterization of the optimal strategy within the parameter space results in intuitive thresholds consistent with those commonly observed in these fields.
+    - Let:
+ 
+    IED := I ∈ R : C*D = CE
+ 
+    IEA := I ∈ R : C*A = CE
+ 
+    IDA := I ∈ R : C*D = C*A
+    - *IED*, *IEA*, and *IDA* denote the values of the algorithm’s information content at which the expected costs of the expert-alone and delegation strategies, expert-alone and automation strategies, and delegation and automation strategies, respectively, are the same as each other.
+    - Let:
+ 
+    BA := PE(TP) + PE(TN) / 2
+ 
+    NFB := PE(TP)λ[cl − cf] − PE(FP)(1 − λ)cf
+    - BA represents balanced accuracy, and NFB represents the net financial benefit due to expert decisions.
+    - Balanced accuracy (BA) is the average of the sensitivity and specificity of the expert and is equivalent to the Youden Index [Author, year].
+    - The net financial benefit (NFB) is calculated by subtracting the prevalence-adjusted cost of false positives from the prevalence-adjusted marginal benefit of preventing litigation risk through true positives.
+ 
+### 2.3.1. Proposition 1
+- *Proposition 1*. Assume *IED* < *IDA* so that delegation is a possible alternative. The optimal strategies for various conditions are outlined in Table 1.
+    - The characterization of the optimal strategy is influenced by the comparison between disease prevalence and the relative economic consequences of false-positive versus false-negative decisions.
+    - Tables 1a and b present distinct strategies depending on whether disease prevalence is low or high relative to these cost ratios.
+    - In both low and high-prevalence cases, the optimal strategy is determined by both the performance of the human expert and the AI algorithm.
+    - The columns in Tables 1a and b categorize the expert’s performance into two groups, distinguishing between cases where the net financial benefit is either low or high.
+    - The rows in Tables 1a divide the expert’s net clinical benefit, assessed through balanced accuracy, into categories of low and high values.
+    - They also categorize the AI algorithm’s discriminative performance in terms of *I* into low, medium, or high values (Tables 1a and b).
+    - This framework extends the work of [Author, year] on decision curve analysis, applying these principles to combining human and machine predictions within a workflow.
+ 
+### 2.3.2. Insights from Proposition 1
+- Disease prevalence plays a pivotal role in determining the optimal strategy.
+    - *λ0 = cf / cl* represents the critical prevalence value, defined as the ratio of the cost of a false positive to that of a false negative (the cost ratio).
+    - Disease prevalence is considered high when *λ ≥ λ0* and low otherwise.
+    - The level of disease prevalence significantly influences the healthcare organization’s optimal strategy.
+    - Healthcare organizations should tailor their strategies to the specific prevalence levels within the patient populations they serve.
+    - The choice among automation, delegation, or expert-alone strategies for different diseases will also depend on disease prevalence.
+- When the net financial benefit due to the decision of the human expert is low, automation emerges as the preferred strategy in almost all cases.
+    - The sole exception occurs when certain mammography tasks are delegated to human experts, driven by a high clinical benefit that compensates for the low financial return.
+- When both the net financial and clinical benefits of the expert’s performance are sufficiently high, any of the three strategies can be optimal, for both low and high disease prevalence cases.
+    - In this scenario, the performance of the algorithm primarily determines the optimal strategy.
+    - When the algorithm’s performance changes from low to medium, the optimal strategy transitions from expert alone to delegation.
+    - When the algorithm’s performance changes from medium to high, the optimal strategy becomes full automation.
+- When the disease prevalence and net clinical benefit is low, the increasing performance of algorithms precipitates an abrupt transition from reliance on expert judgment to automated systems.
+    - In such situations, either expert alone or automation is preferred over the delegation strategy.
+- When the net financial benefit of the human expert is high, and the performance of the AI is low, the expert-alone strategy becomes the optimal strategy in both low- and high-prevalence scenarios.
+ 
+### 2.3.3. Corollary 1
+- *Corollary 1*. For any given *PE(TP)* and *PE(FP)*, there exists a performance level *IA* such that when *IA* < *I*, the optimal strategy is automation.
+    - Once AI algorithms surpass a specific performance level, automation becomes the optimal strategy for mammography-based breast cancer screening.
+    - Healthcare organizations can realize significant efficiency gains through the use of AI algorithms to replace some human tasks after a tipping point of AI performance.
+    - The critical performance threshold required to switch to automation, *IA*, is higher for those tasks where expert performance is higher.
+ 
+## 2.4. Asymmetric Litigation Costs
+- The model captures the economic consequences of missing cancer cases, the case of a false-negative, and the ensuing litigation scenario.
+    - This subsection analyzes the situation where litigation costs differ between the case when an AI algorithm makes an incorrect decision and one in which a human makes an incorrect decision.
+    - The current regulatory environment in the U.S. does not provide a definitive answer to this question [Author, year].
+    - Machines may be subject to product liability law, a potentially stricter standard, which may result in greater liability costs.
+- We modify our model to study the case in which human vs. machine liability are different.
+- *Proposition 2*. A higher liability for machines could alter providers’ preferences away from automation (or delegation) to expert-alone solutions.
+    - Holding machines to a stricter standard could encourage increased human involvement in prediction based decisions.
+    - Even the best-performing algorithms can produce imperfect predictions; hence, liability cases will be unavoidable when we let machines make decisions.
+    - Human involvement may be preferable to a better-performing algorithm.
+    - Social planners who regulate liability cases can set differential standards for humans or machines for a healthier transition to human-machine combined solutions and automation across firms.
+    - Differential treatment of human vs. machine liability can help with the pacing problem between technological and legal developments.
+ 
+## 2.5. Empirical Study
+- We parameterize our model using multiple data sources and conduct two types of numerical experiments.
+    - The first set uses estimates from large-scale, multi-site US mammography studies.
+    - The second set uses algorithmic predictions and radiologist assessments from the Digital Mammography DREAM Challenge [Author, year].
+        - The challenge aimed to develop AI algorithms for mammography-based breast cancer detection.
+        - We have proprietary access to the predicted scores of AI algorithms, the true outcome of whether or not the patient developed cancer within a year from screening, and the radiologist’s assessment of the mammogram.
+        - We use the top-ranked algorithms and obtain the per-mammogram algorithm cost leveraging the total cash prize offered and eventually given.
+ 
+### 2.5.1. Numerical Characterization
+- We start by characterizing the optimal strategy as a function of cost and performance parameters, using point estimates as presented in Table 2.
+- We depict (i) how the apportioning of work between expert radiologists and algorithms depends on the performance differential between the two and (ii) the impact of algorithm and liability costs on how the work is shared between them.
+    - For a fixed human performance level that is not too large, automation is the preferred strategy when the algorithm performance exceeds a certain AUC performance threshold.
+    - This threshold is increasing in the human performance.
+    - Expert alone is the preferred strategy when human performance is very high while the algorithm performance is low enough.
+    - When neither the algorithm nor the radiologist dominates the other in terms of their performance, delegation could be the preferred strategy.
+- A reduction in algorithmic costs replaces some of the parameter regions of the expert-alone strategy with the delegation strategy.
+    - Reducing algorithmic costs facilitates human-machine combined solutions in lieu of human-alone approaches.
+- Lower litigation costs have the effect of increasing the region in which delegation is optimal while reducing the regions of optimality for both automation as well as expert-alone strategy.
+    - The lower litigation costs increases the tolerance for false negatives.
+    - The optimal threshold under a delegation strategy increases resulting in lower reliance on the expert under a delegation strategy.
+    - Policies such as placing a cap on damages through tort reforms can impact how the work is shared between humans and machines.
+- When costs are high, the feasibility of delegation strategy requires high human and algorithm performances.
+ 
+### 2.5.2. Backtesting the Model
+- In this subsection, we validate our proposed approach by retrospectively testing the cost/performance of different AI strategies based on real data.
+    - We have algorithm risk scores for 25,657 distinct mammograms in the holdout sample produced by 18 challenge contestants.
+    - We undersample in a way to match the population prevalence and repeat this sampling procedure 100 times.
+    - For each iteration of the sampling procedure, we evaluate the three strategies that our problem considers.
+    - We compare the average costs associated with each strategy using a two-sided t-test and assess optimality at a 95% confidence level.
+    - The backtesting experiments do not rely on the assumptions presented in the modeling section.
+- When both the algorithm and litigation costs are low, the optimal strategy is delegation for most algorithms even when their performance is lower.
+    - The difference in optimal costs between using higher and lower-performing algorithms in the redesign is large.
+    - The expected costs under the delegation strategy using the top-performing algorithm suggest a 30.1% reduction from the expert-alone strategy.
+- When both the algorithm and litigation costs are high, we observe only the top-performing algorithms to become a part of the mammography operations.
+    - The expected costs under the delegation strategy suggest a 17.5% reduction from the expert-alone strategy.
+    - The reductions in both cases suggest that potential savings from the delegation strategy could be substantial to healthcare organizations.
+ 
+# 3. Discussion
+- We examine how a healthcare organization strategically allocates tasks between human experts and AI systems to lower operational costs, considering three strategies: expert alone, delegation, or automation.
+    - We use a probabilistic model, grounded in statistical principles of machine learning, to represent algorithmic decisions.
+    - By applying this model, we minimize costs and identify conditions under which each strategy becomes optimal.
+    - We also characterize these strategies based on the cost and performance of human experts and AI algorithm.
+    - To quantify the economic outcomes, we incorporate estimates from medical studies and results from a crowdsourced competition on AI-based breast cancer detection.
+- Our study offers valuable guidance to healthcare organizations on integrating AI into their workflows by balancing tasks between expert radiologists and algorithms.
+    - Disease prevalence is a key factor in determining AI’s optimal use.
+    - The balance between high and low prevalence, combined with the cost trade-offs of false positives and false negatives, can shift the preference toward either a delegation strategy or full automation.
+    - Organizations should tailor their AI adoption and operational redesign decisions to the specific characteristics of each disease.
+- The costs associated with algorithms and false assessments play a crucial role in shaping a healthcare organization’s optimal strategy.
+    - When AI demonstrates high predictive performance, the organization may assign full responsibility to either the AI or the human expert, depending on the cost of implementing the algorithm.
+    - Differences in litigation costs between algorithms and humans may induce the uptake of hybrid strategies where human involvement remains part of the decision-making process.
+- The numerical experiments highlight both the practicality and benefits of the proposed approach.
+    - Based on the current capabilities of AI in mammography and existing clinical practices, a human-machine combined workflow (the delegation strategy) emerges as the most effective option.
+    - This strategy could achieve significant cost reductions, ranging from 17.5% to 31.1%.
+- Our model reflects U.S. screening practices, thus, in non-U.S. contexts, alternative strategies should be considered.
+- In conclusion, this paper introduces an operational framework for integrating AI into routine clinical decision-making, with a focus on mammography-based breast imaging.
+    - We develop a mathematical characterization of the problem and validate our theoretical insights using data from a real-world crowdsourcing competition on breast cancer prediction from mammograms.
+    - While the study uses mammography as a case example, the framework is adaptable to various clinical scenarios where predictive accuracy is essential, and AI holds significant potential to improve efficiency.
+ 
+# 4. Methods
+- We define the expected costs associated with each strategy as follows:
+ 
+CE := ce + P(η = s)cf + P(η = h|s)λcl
+ 
+CE = ce + λcl + PE(TP)λ[cf − cl] + PE(FP)(1 − λ)[cf]
+ 
+CD(tD) := ca + P(r ≥ tD)ce + P(r ≥ tD, η = s)cf + P(r < tD|s)λcl + P(r ≥ tD, η = h|s)λcl
+ 
+CD(tD) = ca + λcl + P(r ≥ tD|s)λ[ce + P(η = s|s)(cf − cl)] + P(r ≥ tD|h)(1 − λ)[ce + P(η = s|h)cf]
+ 
+CA(tA) := ca + P(r ≥ tA)cf + P(r < tA|s)λcl
+ 
+CA(tA) = ca + λcl + P(r ≥ tA|s)λ(cf − cl) + P(r ≥ tA|h)(1 − λ)cf
+ 
+C* := min {CE, min tD CD(tD), min tA CA(tA)}
+ 
+- In our optimization model, we rely on two technical assumptions that underpin our analysis:
+ 
+Assumption 1. ca/(1 − λ) < ce < cf < cl.
+ 
+Assumption 2. PE(TP) > ce / (cl − cf) and PE(FP) < (cf − ce) / cf
+- Consistent with prior machine learning research in mammography, we assume conditional independence between the algorithm’s risk score and the human expert’s predictions given the patient’s health status.
+ 
+# 5. Ethics
+- Sage Bionetworks obtained IRB approval to conduct the Digital Mammography Challenge and to share the best predictive models and accompanying methods for research use.
+- The IRB also granted a full waiver of authorization under HIPAA to enable access and analysis of the mammogram images and survey data to Sage Bionetworks and partner challenge organizers.
+ 
+# 6. Datasets
+- This study leverages two primary datasets to support its analysis.
+    - The first dataset is synthetic data designed to simulate a controlled environment for validating theoretical models.
+    - The second dataset originates from the Digital Mammography DREAM Challenge, a real-world crowdsourcing competition.
+ 
+# 7. Reporting summary
+- Further information on research design is available in the Nature Portfolio Reporting Summary linked to this article.
+ 
+# 8. Data availability
+- The synthetic data used to create Fig. 1 and the associated results can be generated using the code in our GitHub repository.
+- The Digital Mammography DREAM Challenge data used to create Fig. 2 and associated results are available under restricted access due to its sensitive nature.
+ 
+# 9. Code availability
+- The analyses reported in this study used the statistical software R version 4.4.2.
+- The entire codebase utilized in this manuscript is publicly available under the Apache License on the following GitHub repository.
+ 
+---
+ 
+# Executive summary of 1. Introduction
+- The introduction highlights the increasing demand for innovative solutions in mammography screening due to the rising global incidence of breast cancer and the shortage of specialized radiologists.
+- AI has emerged as a promising tool to bridge the demand-supply gap, with potential applications ranging from full automation to integrated AI-human decision-making.
+- The research evaluates the economic viability of integrating AI-driven solutions into breast cancer screening programs and assesses the cost and performance outcomes against radiologist-only solutions, comparing expert-alone, automation, and delegation strategies using an optimization model grounded in statistical principles and real-world mammography data.
+ 
+# Executive summary of 2. Results
+- The Results section outlines three strategies for decision-making in mammography: expert-alone, delegation, and automation.
+- It details how each strategy incorporates different degrees of AI involvement, including the decision rules and thresholds used by the AI algorithms.
+- It presents the mathematical representation of the AUC, which is used to assess the performance of algorithms, and defines the key components such as information content.
+- It introduces the expected costs and explains the assumptions used in solving the optimization model, along with the analytical derivation of the optimal strategy based on cost factors, accuracy, and algorithm performance.
+- Furthermore, it studies how having a larger litigation cost for the algorithm when a sick patient is deemed as healthy could alter providers’ preferences away from automation (or delegation) to expert-alone solutions.
+- Empirically, by parameterizing our model using multiple data sources, with numerical experiments and using algorithmic predictions and radiologist assessments from the Digital Mammography DREAM Challenge.
+- Lastly, it validates our approach by retrospectively testing the cost/performance of different AI strategies based on real data.
+ 
+# Executive summary of 3. Discussion
+- The Discussion section synthesizes the findings of the study, emphasizing the strategic allocation of tasks between human experts and AI systems to minimize costs in mammography screening.
+- It highlights the pivotal role of disease prevalence in determining the optimal AI use, as well as the costs associated with algorithms and false assessments.
+- The section underscores the practicality and benefits of a human-machine combined workflow (delegation strategy) for significant cost reductions.
+- It acknowledges the limitations of the model reflecting U.S. screening practices and proposes adaptations for non-U.S. contexts.
+- Finally, the section concludes by emphasizing the adaptability of the developed operational framework to various clinical scenarios where predictive accuracy is essential.
+ 
+# Executive summary of 4. Methods
+- The Methods section outlines the mathematical formulations used to define the expected costs associated with each of the three strategies: expert alone, delegation, and automation.
+- It details the assumptions made in the optimization model and states the condition of conditional independence between the algorithm's risk score and the human expert's predictions, given the patient's health status.
+ </details>
+  	
+```
 title: The Societal Impact of Sharing Economy Platform Self-Regulations—An Empirical Investigation
 authors: Wencui Han, Xunyi Wang, Mehmet Eren Ahsen, Sunil Wattal
 journal: Information Systems Research
