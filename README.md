@@ -1028,3 +1028,332 @@ published: 2019
 *   The findings can be translated into clinical practice, which involves a proper weighting of **clinical-risk information** and **mammogram** information, and reducing, eliminating, or properly adjusting for the **bias** due to **clinical-risk information**.
 *   Future research directions are also suggested.
 </details>
+
+
+
+```
+title: Learning from Failures: Differentiating Between Slip-ups and Knowledge Gaps
+authors: Gopesh Anand, Ujjal Kumar Mukherjee
+journal: Organization Science
+published: 2024
+```
+ 
+
+# Executive Summary
+- We investigate **firm learning from failures**, defined as a **reduction in subsequent recalls**, by dividing failures into **two types**: **slip-up (process) failures** (e.g., product contamination due to violation of cleanliness protocols) and **knowledge gap (design) failures** (e.g., unexpected interactions of two medications).
+- We examine whether this **reduction in subsequent recalls** (learning) occurs in the context of both types of failures, using **product recalls** in pharmaceuticals and medical devices as the study context.
+- Based on text analysis of recall documents, we classify recalls into **process-related** (slip-up) and **design-related** (knowledge gap).
+- We also study how **innovation capabilities** (accumulated patents and lagged R&D intensity) impact learning from both types of failures; for instance, by providing a greater ability to identify causal associations for failures.
+- Findings indicate that **design-related recalls** generate *greater* learning (i.e., a *larger* reduction in subsequent recalls) than **process-related recalls**.
+- Accumulated patents and lagged R&D intensity *enhance* learning from design-related recalls (i.e., lead to a *greater* reduction in subsequent recalls following design-related recalls).
+- Overall, learning mechanisms invoked by failures are concentrated more on **knowledge gap failures** than **slip-up failures**, and this reduction in subsequent recalls is greater when firms possess higher innovation capabilities.
+- We extend organizational learning theory by differentiating between learning from different types of failures and absorptive capacity theory by incorporating the role of innovation capabilities in enhancing learning from failures.
+- We recommend focusing on the cultural and social mechanisms of organizational learning in addition to the technical and structural mechanisms that may mainly impact learning from knowledge gap failures for improving learning from slip-up failures.
+
+#organizational_learning #absorptive_capacity #failures #innovation #product_recalls #pharmaceuticals #medical_devices #knowledge_gap #slip_ups #patents #R&D
+
+<details>
+# 1. Introduction
+- Organizational learning theory suggests that failures can lead to improvements [Cyert and March 1963; Argyris and Sch¨on 1978, 1996; Argote 2013; Sitkin 1992, Dahlin et al. 2018].
+- **Product failures** are defined as undesirable outcomes for users [Cannon and Edmondson 2001].
+- We categorize product failures into **slip-ups** in production processes and **knowledge gaps** in product designs [Rasmussen 1983, Frese and Keith 2015].
+    - Organizational learning requires reinforcement of established practices and experimentation for changes to product designs [Popper and Lipshitz 1998; Anand et al. 2016, Eggers and Suh 2019].
+- This research aims to determine whether learning occurs from both **slip-up failures** and **knowledge gap failures**.
+    - We also examine how **absorptive capacity** from **innovation capabilities** enhances these learning mechanisms [Cohen and Levinthal 1990].
+- Absorptive capacity theory indicates that firms differ in their ability to absorb and use information, especially those with a history of innovation [Cohen and Levinthal 1990].
+    - We apply this perspective to learning from product failures, focusing on knowledge absorbed from innovation efforts and past innovations [Dahlin et al. 2018], rather than just external sources.
+- We develop hypotheses based on organizational learning and absorptive capacity theories, testing them using data on **product recalls** as indicators of product failures [Haunschild and Rhee 2004, Thirumalai and Sinha 2011, Kalaignanam et al. 2013, Shah et al. 2017, Gao et al. 2022, Astvansh et al. 2022a].
+- We divide product recalls into **process-related** (slip-up) and **design-related** (knowledge gap) recalls.
+    - **Innovation capabilities** are measured using **accumulated patents** and **lagged R&D intensity** [DeCarolis and Deeds 1999, Pennetier et al. 2019].
+- We present two examples of firm learning from product recalls.
+    - The first example is a medical implant device recall due to difficulty in distinguishing the top and bottom of the device, leading to inverted implantations. This design-related recall prompted a redesign to prevent future errors.
+    - The second example involves the da Vinci surgical robot, where recalls related to the surgical tip and robotic "EndoWrist" portions were followed by supplemental design approvals and patents, indicating learning and innovation.
+- We use product recall data for publicly traded firms in the medical device and pharmaceutical industries in the United States, regulated by the FDA.
+    - We use text analysis of recall announcements to identify process-related and design-related recalls. We employ negative binomial generalized linear models (GLMs) to study firm learning. Patent data comes from the USPTO, and R&D investment data from the WRDS database.
+- The key findings are:
+    - Firms learn more from design-related recalls than from process-related recalls.
+    - Innovation capabilities (accumulated patents and lagged R&D intensity) enhance learning from recalls.
+    - This enhancement is greater for design-related recalls.
+- This study demonstrates how the reasons for failures and firms' innovation efforts interact, leading to heterogeneity in learning from failures.
+- We discuss results from a post hoc analysis, suggesting that the two types of recalls invoke different learning mechanisms:
+    - Knowledge gap failures benefit from focused root cause analysis, experimentation, and design changes.
+    - Slip-up failures require deliberate actions to improve process compliance.
+- We make three contributions:
+    - Develop a two-way categorization of failures and study the impacts on learning.
+    - Provide evidence of the connection between learning from failures and innovation capabilities.
+    - Generate implications for more comprehensive learning from failures, including slip-up failures, emphasizing organizational culture and a dual focus on innovation and improvement [Sitkin et al. 1994, Repenning and Sterman 2001; Adler and Borys 1996, Chandrasekaran et al. 2012].
+
+# 2. Conceptual Development
+## 2.1. Product Failures
+- Failures are outcomes of errors resulting in departures from anticipated outcomes [Cannon and Edmondson 2005, Dahlin et al. 2018].
+- Product failures are distinct from managerial failures in terms of learning mechanisms [Sitkin 1992, Goodman et al. 2011].
+    - Managerial failures relate to broader decisions with firm-wide implications [Eggers 2012a, b; Barnett and Freeman 2001; Muehlfeld et al. 2012].
+    - Product failures are technical failures conducive to information gathering, investigation, and experimentation [Khanna et al. 2016].
+- Product failures are somewhat unavoidable due to increasing complexities [Thirumalai and Sinha 2011, Shah et al. 2017, Ball et al. 2018, Zou et al. 2023].
+    - Reactions to product failures can result in experiential learning through organizational efforts [Edmondson 2011, 2023; Dahlin et al. 2018, p. 253].
+- Mechanisms for learning include allocating attention to causes [Ocasio 1997, Park et al. 2023] and searching for and implementing solutions [Cyert and March 1963].
+- Despite support for learning from product failures [Haunschild and Rhee 2004, Thirumalai and Sinha 2011, Kalaignanam et al. 2013], further studies are needed on different types of failures and conditions conducive to such learning [Wowak and Boone 2015, Dahlin et al. 2018, Park et al. 2023].
+- The ability to make sense of errors and handle uncertainty is crucial for deriving lessons from failure experiences [Park et al. 2023].
+    - Innovation capabilities can enhance the capability of learning from failures [Greve and Taylor 2000, Maslach 2016].
+- We categorize product failures into:
+    - **Slip-up failures**: related to the execution of prescribed established processes.
+    - **Knowledge gap failures**: related to missing functionalities or malfunctions [Rasmussen 1983, Goodman et al. 2011, Frese and Keith 2015].
+- Slip-up failures result from inappropriate application of established rules, while knowledge gap failures result from the nonexistence of complete rules [Reason 2016].
+    - They mirror "avoidable errors and the unavoidable outcomes of experiments and risk taking" [Cannon and Edmondson 2005, p. 300].
+- Examples of slip-up failures: product contamination due to violation of cleanliness protocols, faulty product due to miscalibration.
+- Examples of knowledge gap failures: unexpected interactions of medications, failure of a device to perform its intended function for unclear reasons.
+
+## 2.2. Product Recalls
+- **Recalls** are the correction or removal of products following failures [FDA 2020b].
+- Recalls for consumer products are common and increasing, with over 850 recall events in the second quarter of 2023.
+- Recalls can result in significant direct and indirect costs. Examples include Johnson & Johnson’s 2010 recall of Children’s Tylenol and Pfizer's 2012 recall of birth control pills.
+- Recall counts provide longitudinal data for studying learning, and their texts provide insights into reasons for recalls.
+- Strategic approach to managing recalls is to resolve the failures and derive lessons for future products and processes [Sitkin 1992, Craig and Thomas 1996].
+- Manufacturing processes and product designs are main sources for product recalls [Hora et al. 2011, Shah et al. 2017].
+    - **Process-related recalls** originate from shortfalls in process compliance [Ball et al. 2018].
+    - **Design-related recalls** originate from development or enhancement of products [Thirumalai and Sinha 2011, Ball et al. 2018].
+- Process-related recalls and design-related recalls align with descriptions of slip-up failures and knowledge gap failures.
+- We use data on recalls issued by FDA-regulated firms in the medical device and pharmaceutical industries.
+    - FDA-related recalls are mostly voluntarily issued by the manufacturer and overseen by the agency [Williams 2010, Nagaich and Sadhna 2015].
+    - These are expected to be more authentic firm-choices that lead to learning [Haunschild and Rhee 2004].
+
+# 3. Hypotheses
+- We consulted with five practitioners and a subject matter expert from the FDA to develop our conceptual foundations.
+- The FDA regulates the manufacture of medical devices and pharmaceuticals (Step 1). Manufacturing firms monitor user reports and gather market intelligence (Step 2).
+- When a product failure is detected, a quality management team analyzes it (Step 3) to determine whether the failure is isolated or systematic (Step 4).
+    - In the case of an isolated failure (Step 4a), action is taken to resolve it. This is described as single-loop learning [Argyris 1977, Argote and Miron-Spektor 2011].
+    - In the case of a systematic failure (Step 4b), the team escalates the incident and recommends a recall [Wowak et al. 2021, Darby et al. 2023].
+- If approved, the firm issues the recall in coordination with the FDA (Step 5), which oversees removals and corrections.
+- Next, the quality management team searches for root causes and develops ways to reduce chances of failures (Step 6).
+
+## 3.1. Learning from Recalls
+- One perspective suggests that failure experiences are more effective at generating learning because they activate managerial attention [Ocasio 1997, Ocasio et al. 2020] and result in more focused searches for solutions [Madsen and Desai 2010, Desai and Madsen 2022].
+- An opposing view is that firms do not learn from failure experiences due to myopic reactions, uncertainty, and lack of sustained results [Cannon and Edmondson 2001, Edmondson 2011].
+- The contingency view focuses on conditions under which failures may or may not lead to learning [Park et al. 2023].
+- Existing research has pointed to the existence of learning from recalls [Thirumalai and Sinha 2011, Kalaignanam et al. 2013].
+    - Voluntary recalls have a greater impact than mandatory recalls [Haunschild and Rhee 2004].
+- We add contextual specificity by studying learning from recalls, and the contingency role of innovation capabilities on such learning.
+
+### 3.1.1. Learning from Process-Related Recalls
+- When the product recall is based on a slip-up (Step 6a(i)), corrections focus on updating standard operating procedures (Step 6a(ii)) and on training and motivating employees (Step 6a(iii)).
+- After the recall, the firm may need FDA approval for the changes (Step 6a(iv)).
+- Research in quality management emphasizes process control and engagement of employees [Sitkin et al. 1994, Anderson et al. 1994].
+- The challenge is combining attention to compliance and efficiency with autonomy and innovation [Adler et al. 1999, Spear and Bowen 1999], preventing deterioration of attention [Anand et al. 2012], and changing organizational cultures [Tucker and Edmondson 2003].
+- We posit that issuing and terminating process-related recalls provides impetus for organizational environments [Choo et al. 2007] conducive to developing better processes by bringing attention [Ocasio 1997, Ocasio and Wohlgezogen 2010] to process control.
+
+- *H1a*: Accumulated process-related recalls are negatively associated with subsequent process-related recalls.
+
+### 3.1.2. Learning from Design-Related Recalls
+- A design-related recall is based on a defect in an existing product or deficiencies in features (Step 6b(i)).
+- Fulfilling the knowledge gap requires searching for knowledge from internal (Step 6b(ii)) and external (Step 6b(iii)) sources, combining it (Step 6b(iv)) into new knowledge to redesign the product (Step 6b(v)).
+- The quality management team uses data and drawings (Step 6b(vi)).
+- In addition to terminating the recall, the firm needs approvals from the FDA for new designs.
+- A design-related recall has a higher level of ambiguity than a process-related recall [Kalaignanam et al. 2013].
+- Causal attributions play a crucial role in preventing similar failures [Dahlin et al. 2018, Park et al. 2023].
+- Research emphasizes the value of structural mechanisms [Jensen and Szulanski 2007, Maslach et al. 2018, Argote and Guo 2016].
+
+- *H1b*: Accumulated design-related recalls are negatively associated with subsequent design-related recalls.
+
+## 3.2. Enhancement of Learning from Recalls
+- The quality management team consults with design teams.
+- The teams working on innovations and on recalls share knowledge.
+- Firms that do this well look for similar issues and related products.
+- The FDA oversees recalls and approvals for new products.
+- Innovation capabilities enhance firms’ understanding of product functionalities and improve proficiencies for recovering from failures.
+- We propose a role for firm innovation capabilities in developing absorptive capacity for learning from recalls [Cohen and Levinthal 1990].
+- We focus on the innovation capabilities of firms [Adler and Borys 1996, Chandrasekaran et al. 2012, Zou et al. 2023].
+- Firms’ stocks of innovations and their innovation efforts represent two integral aspects of the innovation capabilities [Cohen and Levinthal 1990, DeCarolis and Deeds 1999].
+
+### 3.2.1. Stocks of Innovations: Accumulated Patents
+- Stocks of innovations enhance learning from failures in three ways:
+    - Prior innovation experience provides firms with a greater ability to identify causal associations for failures.
+    - Stocks of innovations support wider internal searches for solutions.
+    - Stocks of innovations help identification of valuable external knowledge [Cohen and Levinthal 1990].
+- Patents represent the generation of new processes and products [Katila and Ahuja 2002, Durand et al. 2008].
+
+- *H2*: The negative association of accumulated recalls with subsequent recalls is stronger when there are higher numbers of accumulated patents than when there are fewer accumulated patents.
+- Stocks of innovations are an indicator of a firm’s orientation toward experimentation.
+
+- *H2a*: The negative association of accumulated process-related recalls with subsequent process-related recalls is stronger when there are higher numbers of accumulated patents than when there are fewer accumulated patents.
+- Accumulated patents provide evidence of innovative actions for developing or using new technologies [Van Den Bosch et al. 1999].
+
+- *H2b*: The negative association of accumulated design-related recalls with subsequent design-related recalls is stronger when there are higher numbers of accumulated patents than when there are fewer accumulated patents.
+
+### 3.2.2. Recent Innovation Efforts: Lagged R&D Intensity
+- Finding remedies for failures involves troubleshooting problems.
+- Active involvement in R&D implies a greater focus on integrating information from diverse sources [Teece et al. 1999].
+
+- *H3*: The negative association of accumulated recalls with subsequent recalls is stronger when there is higher lagged R&D intensity than when there is lower lagged R&D intensity.
+
+- *H3a*: The negative association of accumulated process-related recalls with subsequent process-related recalls is stronger when there is higher lagged R&D intensity than when there is lower lagged R&D intensity.
+- Design-related recalls call for actions that are close to R&D efforts.
+
+- *H3b*: The negative association of accumulated design-related recalls with subsequent design-related recalls is stronger when there is higher lagged R&D intensity than when there is lower lagged R&D intensity.
+
+# 4. Data
+## 4.1. Sample
+- We test our hypotheses using data on recalls in the U.S. medical device and pharmaceutical industries during 2000–2016.
+- All recalls in our data set are voluntary recalls.
+- FDA classifies recalls into three classes (I to III).
+    - We removed Class III recalls.
+- We compiled and cross-validated the data on recalls using the FDA recalls database and the FDA’s Significantly Regulated Organizations (SROs) list.
+- We selected firms listed in the U.S. stock exchanges, and removed firms that did not exist independently for at least 10 years due to mergers and acquisitions (M&As).
+- We deleted firms that did not have at least 30 recalls during 2000–2016.
+- Our final sample consists of 1,728 firm-years (108 firms over 16 years) for 53 medical devices and 55 pharmaceutical publicly traded firms in the United States, with 7,984 recalls.
+- We collected product approvals from the FDA database, patent data from the USPTO, and financial data from the WRDS database.
+
+## 4.2. Classification of Recalls
+- We classified recalls based on the text of the description for each recall using a combination of manual and automatic text analysis.
+    - This resulted in 33% process-related and 67% design-related recalls in medical devices and 59% process-related and 41% design-related recalls in pharmaceuticals.
+- Cross-validating our classification with the self-classification by firms resulted in a 95% match.
+
+## 4.3. Operationalization of Variables
+### 4.3.1. Dependent Variables
+- Subsequent Recalls: measures the total number of recalls in a firm-year.
+- We divide Subsequent Recalls into Subsequent Process-related Recalls and Subsequent Design-related Recalls.
+
+### 4.3.2. Independent Variables
+- Accumulated Recalls: cumulative count of recalls issued by the firm until the prior year (t - 1).
+- Accumulated Patents: the stock of innovations that a firm has accumulated prior to a specific year t starting from the year (t - 10).
+- Lagged R&D Intensity: R&D investment as a percentage of net revenue of the firm for the preceding year (t - 1).
+
+### 4.3.3. Control Variables
+- Lagged Revenue: the prior year’s net revenue of a firm.
+- Lagged Profitability: a firm’s one-year lagged net operational profitability as a percentage of net revenue.
+- Lagged Product Approvals: a firm’s one-year lagged total number of new products as reported in the FDA database.
+- Industry: identifies whether each firm is in pharmaceutical or medical devices.
+- Firm: identifies each firm.
+- Year: controls for year fixed effects.
+
+# 5. Analyses and Results
+- Descriptive statistics and correlations are shown in Table 1.
+- Subsequent recalls, subsequent process-related recalls, and subsequent design-related recalls are negatively correlated with accumulated recalls, accumulated process-related recalls, and accumulated design-related recalls, respectively.
+- Subsequent recalls has positive correlations with accumulated patents and lagged R&D intensity.
+- We estimate negative binomial generalized linear models (NB-GLMs).
+- We check for serial correlations using the Breusch-Godfrey test and the Durbin-Watson test.
+- We perform all model estimations with correction for serial correlation using the tsglm() function.
+- Based on a significant result for a Hausman test, we used fixed effects of firms in the models.
+
+## 5.1. Learning from Recalls (Baseline Premise in Lieu of Hypothesis 1) and Enhancing Effects of Accumulated Patents (Hypothesis 2) and Lagged R&D Intensity (Hypothesis 3)
+- In Table 2, we present the results for the NB-GLM for learning from all recalls.
+- Accumulated recalls is significantly and negatively associated with subsequent recalls (b = -0.76, p < 0.001).
+    - This supports the learning effect established in the extant literature.
+- Accumulated patents (b = 0.44, p < 0.001) and lagged R&D intensity (b = 0.37, p < 0.001) have significant positive associations with subsequent recalls.
+- The interaction of accumulated recalls with accumulated patents is significant and negative (b = -0.13, p < 0.001).
+    - This supports *H2*, indicating greater learning from accumulated recall experience for firms with greater stocks of innovations.
+- The interaction of lagged R&D intensity with accumulated recalls is also significant and negative (b = -0.28, p < 0.001).
+    - This supports *H3*, stating that firms making greater innovation efforts learn better from recall experience.
+
+## 5.2. Learning from Process-Related Recalls (Hypothesis 1a) and Enhancing Effects of Accumulated Patents (Hypothesis 2a) and Lagged R&D Intensity (Hypothesis 3a)
+- In Table 3, we present the results for the NB-GLM for learning from process-related recalls.
+- The parameter estimate for accumulated process-related recalls is negative but only marginally significant (b = -0.16, p < 0.10).
+    - Thus, we do not find support for the learning-related negative association between accumulated process-related recalls and subsequent process-related recalls (*H1a*).
+- The interaction of accumulated process-related recalls and accumulated patents is negative and significant (b = -0.11, p < 0.001).
+    - This supports *H2a*.
+- The interaction of lagged R&D intensity and accumulated process-related recalls is not significant.
+    - Therefore, we do not find empirical support for *H3a*.
+
+## 5.3. Learning from Design-Related Recalls (Hypothesis 1b) and Enhancing Effects of Accumulated Patents (Hypothesis 2b) and Lagged R&D Intensity (Hypothesis 3b)
+- Table 4 shows the results for the NB-GLM for learning from design-related recalls.
+- Accumulated design-related recalls is significantly and negatively associated with subsequent design-related recalls (b = -0.19, p < 0.001).
+    - This result supports *H1b*, which posits that experience with accumulated design-related recalls results in learning.
+- The two interactions of accumulated patents and accumulated design-related recalls and lagged R&D intensity and accumulated design-related recalls have significant and negative effects (b = -0.11, p < 0.001) and (b = -0. 30, p < 0.001) on subsequent design-related recalls.
+    - These results support *H2b* and *H3b*.
+
+## 5.4. Summary of Results
+- We summarize our results in Table 5.
+- The interaction-effects results support our assertion that stocks of innovations (accumulated patents) and recent innovation efforts (lagged R&D intensity) enhance learning from product failure experience (accumulated recalls) and reduce the likelihood of subsequent recalls.
+- Although the main effects strongly support the existence of learning from knowledge gap failures (accumulated design-related recalls), they do not support the existence of learning from slip-up failures (accumulated process-related recalls).
+
+## 5.5. Additional Tests for Learning and Alternative Explanations
+- We explore three events other than product recalls that can also provoke attention, driving learning, and leading to improvements in product performance:
+    - public litigation
+    - adverse events
+    - FDA-issued warning letters.
+- We create Litigation as a binary categorical variable coded as 1 if a firm experienced product-related litigation.
+    - The integration of litigation with accumulated recalls is marginally significant (b = -0.03, p < 0.10). These results suggest that product-related litigations do focus organizational attention.
+- We estimate separate models for counts of serious and not serious adverse events.
+    - Lagged serious adverse events have a positive significant association with subsequent recalls.
+    - The interaction of lagged serious adverse events with accumulated patents is significant (b = -0.08, p < 0.05).
+- We use a categorical variable Warning Letter to indicate if a firm experienced an FDA warning related to shortcomings in products and processes.
+    - Results suggest that warning letters focus managerial attention and improve subsequent performance (b = -0.11, p < 0.01).
+- Overall, the additional tests provide supporting evidence for the attention focusing mechanism of failures.
+- We explore if the learning is driven by firms' inherent capabilities by estimating models of cross-learnings, examining whether accumulated design-related recalls are associated with subsequent process-related recalls and vice versa.
+    - Results indicate a marginally significant cross-learning effect of accumulated design-related recalls on subsequent process-related recalls (b = -0.14, p < 0.10).
+
+## 5.6. Supplementary Analyses
+### 5.6.1. Robustness Checks
+- We perform two supplementary analyses to check the robustness of our results against endogeneity and nonindependent observations:
+    - We use an instrumental variable (IV) regression estimate to instrument the potential endogenous explanatory variable lagged R&D intensity.
+    - We use a generalized estimating equation (GEE) with exchangeable variance structure within firms to check for robustness against the possible non-IID structure of the observed data.
+- Both these results confirm the robustness of the original results.
+
+### 5.6.2. Post Hoc Analysis
+- We conduct a post hoc analysis that considers different periods for accumulating past recalls and patents.
+- Although learning from accumulated design-related recalls appears to take more time to accrue, the lessons appear to persist.
+- In contrast, process-related learning may accrue more quickly but can deteriorate.
+
+# 6. Discussion
+- Our objectives were to differentiate between product failures attributed to slip-ups and knowledge gaps, study organizational learning from each, and study the impacts of firms' innovation capabilities on learning from failures.
+- Results indicate that firms learn from failures to reduce subsequent failures, and this learning is greater for firms with stronger innovation capabilities.
+
+## 6.1. Theoretical Implications
+- Our research extends the theory of organizational learning from failures by explaining the role of the context for learning:
+    - sources of failures
+    - innovation capabilities of firms
+- Different organizational mechanisms for learning are activated by slip-up failures versus knowledge gap failures.
+    - Cultural mechanisms apply to a greater extent for slip-up failures.
+    - Structural mechanisms apply to a greater extent for knowledge gap failures [Popper and Lipshitz 1998].
+- The results of our post hoc analysis offer additional implications for learning from the two sources of failures.
+    - Learning from slip-up failures is quick to be realized, it is also quick to deteriorate.
+    - deliberate efforts to refocus attention on process compliance is needed [Ocasio and Wohlgezogen 2010, Anand et al. 2012]
+- The second contingency factor is the innovation capabilities of the firm.
+- We invoke absorptive capacity theory.
+    - This study, to the best of our knowledge, is the first to demonstrate the role of absorptive capacity in organizational learning from failures.
+- Absorptive capacity helps to discern opportunities for exploring new knowledge from failure occurrences, and through a greater capability to assimilate and sustain the knowledge [Martini et al. 2017].
+
+## 6.2. Practical Implications
+- Our categorization would readily apply to failures in other regulated industries as well.
+- In our analysis, slip-up failures did not result in improving the performance of firms.
+    - maintaining continuous attention to compliance is needed [Repenning and Sterman 2001, Anand et al. 2012]
+- By turning prior failures into sources of knowledge, they can reduce the potential for subsequent failures.
+- We need to encourage innovation orientation which has inbuilt mechanisms for learning from failures [Greve and Taylor 2000].
+
+## 6.3. Limitations
+- We conducted our empirical analyses on data from two industries that are highly dependent on innovation.
+- The findings are most applicable to firms in industries that more strongly depend on innovation.
+- Other limitations of our research derive from the secondary nature of data used to test our hypotheses.
+
+---
+
+# Executive summary of 1. Introduction
+- This section introduces the study's focus on how firms learn from failures, distinguishing between slip-up and knowledge gap failures.
+- It highlights the **theoretical foundations** in organizational learning and absorptive capacity.
+- The section sets the stage by explaining the categorization of failures and the role of innovation capabilities in enhancing learning from product recalls, using examples to illustrate the concepts.
+
+# Executive summary of 2. Conceptual Development
+- This section defines product failures and differentiates them from managerial failures.
+- It categorizes product failures into **slip-up** and **knowledge gap failures**, providing examples.
+- The section explains the context of product recalls and their significance, linking them to the two categories of failures.
+
+# Executive summary of 3. Hypotheses
+- This section develops the **hypotheses** based on organizational learning and absorptive capacity theories.
+- It describes the model and the practical steps involved in product failures and recalls.
+- The section presents detailed arguments for each hypothesis, including the expected relationships between accumulated recalls, innovation capabilities (patents and R&D intensity), and subsequent recalls.
+
+# Executive summary of 4. Data
+- This section describes the data used for the study, focusing on the sample selection criteria and data sources.
+- It details the classification of recalls into process-related and design-related categories, and the operationalization of variables such as accumulated recalls, patents, R&D intensity, and control variables.
+
+# Executive summary of 5. Analyses and Results
+- This section presents the results of the empirical analyses.
+- It explains the statistical models used (NB-GLMs) and the steps taken to ensure robustness.
+- The section summarizes the findings for each hypothesis, including the main effects of accumulated recalls and the moderating effects of innovation capabilities.
+- It includes additional tests for alternative explanations and a post hoc analysis of the persistence of learning over time.
+
+# Executive summary of 6. Discussion
+- This section discusses the **theoretical and practical implications** of the findings.
+- It extends organizational learning theory by explaining the role of context (failure source and innovation capabilities).
+- The section offers practical implications for firms, highlighting the importance of addressing both knowledge gap and slip-up failures, and building innovation-focused cultures.
+- It also acknowledges the limitations of the study and suggests directions for future research.
+</details>
