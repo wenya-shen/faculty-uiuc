@@ -14,9 +14,10 @@ published: 2019
 *   The study reveals scenarios where it might be better not to use clinical-risk information if it biases the radiologist's assessment.
 *   Using data and point estimates obtained from mammography practice and medical literature, the **bias-aware algorithm** can significantly improve the expected patient life years or the accuracy of decisions based on mammography.
 
-#Algorithms #Bias #BreastCancerDiagnosis #Classification #DecisionSupportSystems #Mammography #MedicalDecisionMaking #CognitiveBiases #LinearClassifier #ClinicalRiskInformation
 <details>
-  <summary>Click to expand</summary>
+  <summary>#Algorithms #Bias #BreastCancerDiagnosis #Classification #DecisionSupportSystems #Mammography #MedicalDecisionMaking #CognitiveBiases #LinearClassifier #ClinicalRiskInformation
+</summary>
+	
 # 1. Introduction
 
 *   **Algorithms** are increasingly used in decision-making across various domains, but they can be susceptible to human **biases** when the input data is human-generated [Agarwal and Dhar 2014].
