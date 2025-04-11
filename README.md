@@ -15,7 +15,8 @@ published: 2019
 *   Using data and point estimates obtained from mammography practice and medical literature, the **bias-aware algorithm** can significantly improve the expected patient life years or the accuracy of decisions based on mammography.
 
 #Algorithms #Bias #BreastCancerDiagnosis #Classification #DecisionSupportSystems #Mammography #MedicalDecisionMaking #CognitiveBiases #LinearClassifier #ClinicalRiskInformation
-
+<details>
+  <summary>Click to expand</summary>
 # 1. Introduction
 
 *   **Algorithms** are increasingly used in decision-making across various domains, but they can be susceptible to human **biases** when the input data is human-generated [Agarwal and Dhar 2014].
@@ -299,3 +300,4 @@ published: 2019
 *   The **bias-aware algorithm** can significantly improve the expected patient life years.
 *   The findings can be translated into clinical practice, which involves a proper weighting of **clinical-risk information** and **mammogram** information, and reducing, eliminating, or properly adjusting for the **bias** due to **clinical-risk information**.
 *   Future research directions are also suggested.
+</details>
