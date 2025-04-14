@@ -1,4 +1,13 @@
-# 
+# Mehmet Ahsen
+- Assistant Professor of Business Administration and Deloitte Scholar
+### education
+- Ph.D., Biomedical Engineering, University of Texas at Dallas at Dallas, 2015
+- M.S., Electrical and Electronics Engineering, Bilkent University, 2011
+- B.S., Electrical and Electronics Engineering, Middle East Technical University, 2009
+- B.S., Mathematics, Middle East Technical University, 2009
+### teaching
+- **Business Analytics II (BADM 211)** Builds on the foundation from the Business Analytics I (BADM 210), synthesizes concepts through hands-on application and project-based learning. 
+- **Proseminar in Informat Systems (BADM 591)**
 
 ```
 title: Economics of AI and human task sharing for decision making in screening mammography
