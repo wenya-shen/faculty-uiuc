@@ -3696,7 +3696,6 @@ published: 2024
     
   <summary>Click to expand sections</summary>
 
-</details>
 # 1. Introduction
 - Major e-commerce platforms invest in last-mile offline infrastructure to ease logistics, but this infrastructure also has the potential to connect customers and merchants offline [Amazon, 2022].
 - Platforms can distribute free samples through last-mile stations, allowing walk-in customers to claim them via organic interaction.
